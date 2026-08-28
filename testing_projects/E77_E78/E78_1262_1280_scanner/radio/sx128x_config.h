@@ -1,0 +1,57 @@
+#ifndef _SX128X_CONFIG_H_
+#define _SX128X_CONFIG_H_
+
+#include "bsp.h"
+
+#define SX128X_SYNTH_STEP ((double)52000000 / 262144)
+	
+typedef struct 
+{
+  uint8_t modem;
+
+  uint32_t startfreq;
+	uint32_t stopfreq;
+	uint32_t freqstep;
+	int8_t rssithreshold;
+	int16_t scantimems;
+	bool scan_active;
+	
+  int8_t txpower;
+  uint8_t ramptime;
+  //LoRa
+  uint8_t sf; //spreading factor
+  uint8_t bw; //bandwidth
+  uint8_t cr; //coding rate
+  bool opt;
+  uint8_t loraprelen;
+  bool implheader;
+  uint16_t lorasync;
+  uint8_t lorapaylen;
+  bool loracrc;
+  bool invertiq;
+  //FSK parameters
+  uint32_t br; //baud rate
+  uint8_t rbw;
+  uint8_t shaping;
+  uint32_t fdev;
+  uint16_t fskprelen;
+	uint8_t predetlen;
+  uint8_t fsksynclen;
+  uint8_t fsksync[16];//SX1280 needs 15 bytes
+  uint8_t addrcomp;
+	uint8_t syncmatch; //for SV1280 only
+  uint8_t nodeaddr;
+  uint8_t braddr; 
+  bool varlen;
+  uint8_t fskpaylen;
+  uint8_t crctype;
+  uint16_t crcinit;
+  uint16_t crcpoly;
+  bool white;
+  uint8_t whiteinit;
+}SX128Xconfig_t;
+
+void SX128X_config(uint8_t sx,SX128Xconfig_t *config);
+void SX128X_setopmode(uint8_t sx,uint8_t mode);
+
+#endif

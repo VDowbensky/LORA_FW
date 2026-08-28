@@ -1,0 +1,147 @@
+T17E0 037:402.656   SEGGER J-Link V8.16 Log File
+T17E0 037:402.696   DLL Compiled: Feb 26 2025 12:07:26
+T17E0 037:402.704   Logging started @ 2025-11-04 08:30
+T17E0 037:402.708   Process: C:\Keil_v535\UV4\UV4.exe
+T17E0 037:402.712 - 13.188ms 
+T17E0 037:402.720 JLINK_SetWarnOutHandler(...)
+T17E0 037:402.724 - 0.004ms 
+T17E0 037:402.728 JLINK_OpenEx(...)
+T17E0 037:404.716   Firmware: J-Link OB-STM32F072-128KB-CortexM compiled Oct 13 2025 10:13:59
+T17E0 037:405.488   Firmware: J-Link OB-STM32F072-128KB-CortexM compiled Oct 13 2025 10:13:59
+T17E0 037:405.656   Decompressing FW timestamp took 143 us
+T17E0 037:423.248   Hardware: V1.00
+T17E0 037:423.264   S/N: 671030619
+T17E0 037:423.272   OEM: SEGGER
+T17E0 037:423.276   Feature(s): GDB, FlashBP, FlashDL, JFlash, RDI
+T17E0 037:424.028   Bootloader: (FW returned invalid version)
+T17E0 037:424.536   USB speed mode: Full speed (12 MBit/s)
+T17E0 037:424.952   TELNET listener socket opened on port 19021
+T17E0 037:429.400   WEBSRV WEBSRV_Init(): Starting webserver thread(s)
+T17E0 037:429.584   WEBSRV Webserver running on local port 19080
+T17E0 037:429.700   Looking for J-Link GUI Server exe at: C:\Keil_v535\ARM\Segger\JLinkGUIServer.exe
+T17E0 037:429.768   Looking for J-Link GUI Server exe at: C:\Program Files\SEGGER\JLink_V812a\JLinkGUIServer.exe
+T17E0 037:429.804   Forking J-Link GUI Server: C:\Program Files\SEGGER\JLink_V812a\JLinkGUIServer.exe
+T17E0 037:432.316   J-Link GUI Server info: "J-Link GUI server V8.12a "
+T17E0 037:433.000 - 30.272ms returns "O.K."
+T17E0 037:433.024 JLINK_GetEmuCaps()
+T17E0 037:433.028 - 0.005ms returns 0xB8EA5A33
+T17E0 037:433.032 JLINK_TIF_GetAvailable(...)
+T17E0 037:433.224 - 0.187ms 
+T17E0 037:433.240 JLINK_SetErrorOutHandler(...)
+T17E0 037:433.240 - 0.004ms 
+T17E0 037:433.612 JLINK_ExecCommand("ProjectFile = "D:\RFprojects\M6\M665\FW_AT32\project\MDK_V5\JLinkSettings.ini"", ...). 
+T17E0 037:435.620 - 2.003ms returns 0x00
+T17E0 037:435.648 JLINK_ExecCommand("Device = -AT32F413CBT7", ...). 
+T17E0 037:435.784   Flash bank @ 0x08000000: SFL: Parsing sectorization info from ELF file
+T17E0 037:435.796     FlashDevice.SectorInfo[0]: .SectorSize = 0x00000400, .SectorStartAddr = 0x00000000
+T17E0 037:435.800   OFL: Init() present @ offset 0x00000085
+T17E0 037:435.808   OFL: UnInit() present @ offset 0x000000B9
+T17E0 037:435.816   OFL: EraseSector() present @ offset 0x00000115
+T17E0 037:435.820   OFL: ProgramPage() present @ offset 0x00000179
+T17E0 037:435.828   OFL: EraseChip() present @ offset 0x000000D1
+T17E0 037:435.832   OFL: BlankCheck() N/A
+T17E0 037:435.836   OFL: Verify() N/A
+T17E0 037:435.844   OFL: SEGGER_FL_Erase() N/A
+T17E0 037:435.848   OFL: SEGGER_OPEN_Erase() N/A
+T17E0 037:435.852   OFL: SEGGER_FL_Program() N/A
+T17E0 037:435.860   OFL: SEGGER_OPEN_Program() N/A
+T17E0 037:435.864   OFL: SEGGER_FL_Read() N/A
+T17E0 037:435.868   OFL: SEGGER_OPEN_Read() N/A
+T17E0 037:435.876   OFL: SEGGER_FL_CalcCRC() N/A
+T17E0 037:435.880   OFL: SEGGER_OPEN_CalcCRC() N/A
+T17E0 037:435.888   OFL: SEGGER_FL_Start() N/A
+T17E0 037:435.892   OFL: SEGGER_OPEN_Start() N/A
+T17E0 037:435.896   OFL: SEGGER_FL_GetFlashInfo() N/A
+T17E0 037:435.904   OFL: SEGGER_OPEN_GetFlashInfo() N/A
+T17E0 037:435.912   OFL: SEGGER_FL_Verify() N/A
+T17E0 037:435.912   OFL: SEGGER_FL_CheckBlank() N/A
+T17E0 037:435.920   OFL: SEGGER_FL_Prepare() N/A
+T17E0 037:435.928   OFL: SEGGER_FL_Restore() N/A
+T17E0 037:435.928   OFL: SEGGER_FL_EraseChip() N/A
+T17E0 037:435.936   OFL var <SEGGER_FL_GoIntEn>: N/A
+T17E0 037:435.944   OFL var <SEGGER_FL_Flags>: N/A
+T17E0 037:435.964   Device "-AT32F413CBT7" selected.
+T17E0 037:436.900 - 1.244ms returns 0x00
+T17E0 037:436.912 JLINK_ExecCommand("DisableConnectionTimeout", ...). 
+T17E0 037:436.920   ERROR: Unknown command
+T17E0 037:436.928 - 0.008ms returns 0x01
+T17E0 037:436.932 JLINK_GetHardwareVersion()
+T17E0 037:436.936 - 0.004ms returns 10000
+T17E0 037:436.940 JLINK_GetDLLVersion()
+T17E0 037:436.944 - 0.003ms returns 81600
+T17E0 037:436.952 JLINK_GetOEMString(...)
+T17E0 037:436.952 JLINK_GetFirmwareString(...)
+T17E0 037:436.984 - 0.031ms 
+T17E0 037:437.000 JLINK_GetDLLVersion()
+T17E0 037:437.000 - 0.003ms returns 81600
+T17E0 037:437.008 JLINK_GetCompileDateTime()
+T17E0 037:437.012 - 0.003ms 
+T17E0 037:437.016 JLINK_GetFirmwareString(...)
+T17E0 037:437.020 - 0.003ms 
+T17E0 037:437.028 JLINK_GetHardwareVersion()
+T17E0 037:437.032 - 0.003ms returns 10000
+T17E0 037:437.032 JLINK_GetSN()
+T17E0 037:437.040 - 0.004ms returns 671030619
+T17E0 037:437.044 JLINK_GetOEMString(...)
+T17E0 037:437.048 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T17E0 037:437.572 - 0.519ms returns 0x00
+T17E0 037:437.592 JLINK_HasError()
+T17E0 037:437.600 JLINK_SetSpeed(1000)
+T17E0 037:437.640 - 0.040ms 
+T17E0 037:437.936 JLINK_HasError()
+T17E0 037:437.952 JLINK_SetResetType(JLINKARM_RESET_TYPE_NORMAL)
+T17E0 037:437.960 - 0.005ms returns JLINKARM_RESET_TYPE_NORMAL
+T17E0 037:437.964 JLINK_Reset()
+T17E0 037:441.664   ConfigTargetSettings() start
+T17E0 037:441.680    J-Link Script File: Executing ConfigTargetSettings()
+T17E0 037:441.688   [ConfigTargetSettings]
+T17E0 037:441.900   ConfigTargetSettings() end - Took 217us
+T17E0 037:441.916   InitTarget() start
+T17E0 037:441.924    J-Link Script File: Executing InitTarget()
+T17E0 037:547.820   InitTarget() end - Took 105ms
+T17E0 037:701.436   ConfigTargetSettings() start
+T17E0 037:701.472    J-Link Script File: Executing ConfigTargetSettings()
+T17E0 037:701.488   [ConfigTargetSettings]
+T17E0 037:701.912   ConfigTargetSettings() end - Took 435us
+T17E0 037:701.948   InitTarget() start
+T17E0 037:701.960    J-Link Script File: Executing InitTarget()
+T17E0 037:704.104   InitTarget() end - Took 2.13ms
+T17E0 037:809.332 - 371.363ms 
+T17E0 037:809.408 JLINK_GetId()
+T17E0 037:809.912   ConfigTargetSettings() start
+T17E0 037:809.960    J-Link Script File: Executing ConfigTargetSettings()
+T17E0 037:809.988   [ConfigTargetSettings]
+T17E0 037:810.552   ConfigTargetSettings() end - Took 581us
+T17E0 037:810.600   InitTarget() start
+T17E0 037:810.624    J-Link Script File: Executing InitTarget()
+T17E0 037:813.232   InitTarget() end - Took 2.59ms
+T17E0 037:968.248   ConfigTargetSettings() start
+T17E0 037:968.268    J-Link Script File: Executing ConfigTargetSettings()
+T17E0 037:968.280   [ConfigTargetSettings]
+T17E0 037:968.564   ConfigTargetSettings() end - Took 289us
+T17E0 037:968.576   InitTarget() start
+T17E0 037:968.584    J-Link Script File: Executing InitTarget()
+T17E0 037:970.428   InitTarget() end - Took 1.84ms
+T17E0 038:074.848 - 265.437ms returns 0x00000000
+T17E0 038:074.876 JLINK_GetId()
+T17E0 038:075.092   ConfigTargetSettings() start
+T17E0 038:075.116    J-Link Script File: Executing ConfigTargetSettings()
+T17E0 038:075.128   [ConfigTargetSettings]
+T17E0 038:075.384   ConfigTargetSettings() end - Took 260us
+T17E0 038:075.396   InitTarget() start
+T17E0 038:075.400    J-Link Script File: Executing InitTarget()
+T17E0 038:077.200   InitTarget() end - Took 1.79ms
+T17E0 038:230.640   ConfigTargetSettings() start
+T17E0 038:230.656    J-Link Script File: Executing ConfigTargetSettings()
+T17E0 038:230.664   [ConfigTargetSettings]
+T17E0 038:231.044   ConfigTargetSettings() end - Took 382us
+T17E0 038:231.060   InitTarget() start
+T17E0 038:231.064    J-Link Script File: Executing InitTarget()
+T17E0 038:232.920   InitTarget() end - Took 1.84ms
+T17E0 038:337.464 - 262.586ms returns 0x00000000
+T17E0 038:339.048 JLINK_GetFirmwareString(...)
+T17E0 038:339.064 - 0.015ms 
+T17E0 094:186.144 JLINK_Close()
+T17E0 094:199.112 - 12.963ms
+T17E0 094:199.128   
+T17E0 094:199.176   Closed

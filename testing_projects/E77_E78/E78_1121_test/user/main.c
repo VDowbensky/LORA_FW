@@ -1,0 +1,37 @@
+#include "bsp.h"
+#include "radio.h"
+#include "app_cli.h"
+#include "gui.h"
+#include "test.h"
+#include "beeper.h"
+#include "rtc.h"
+
+int main(void)
+{
+	init_power_clk();
+	init_peripherals();
+	delay_ms(100);
+	cli_init();
+	SSD1306_Init();
+	SSD1306_Clear(0);
+	printf("\r\nMULTIBAND RADIO PLATFORM\r\n");
+	printf("HW=%d,FW=%d,%d\r\n",HW_VERSION,FW_VERSION,FW_REVISION);
+	init_radio_specific();
+	delay_ms(100);
+	//oled_test();
+	//GUI_ShowString(0,0,"IDLE MODE  ",16,1);
+	updatescreen();
+	//GUI_DrawLine(64, 64, 64, 16,1);
+	beep(2000,200);
+	
+	while(1)
+	{
+		radio_proc();
+		cli_proc();
+		if(rtc_flag)
+		{
+			rtc_flag = false;
+			updatescreen();
+		}
+	}
+}

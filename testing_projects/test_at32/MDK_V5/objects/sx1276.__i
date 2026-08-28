@@ -1,0 +1,7 @@
+-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c
+-fno-rtti -funsigned-char -fshort-enums -fshort-wchar
+-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x
+-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include
+-IC:/Keil_v535/ARM/CMSIS/Include
+-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER
+-o ./objects/sx1276.o -MMD "../../radiodriver/sx127x/sx1276.c"

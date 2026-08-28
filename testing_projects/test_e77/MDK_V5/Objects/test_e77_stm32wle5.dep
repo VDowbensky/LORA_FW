@@ -1,0 +1,1284 @@
+Dependencies for Project 'test_e77', Target 'stm32wle5': (DO NOT MODIFY !)
+CompilerVersion: 6240000::V6.24::ARMCLANG
+F (..\periph\adc.c)(0x674D4982)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/adc.o -MMD)
+I (..\periph\adc.h)(0x674D4982)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\delay.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\periph\i2c.h)(0x6A70716C)
+F (..\periph\delay.c)(0x674D4982)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/delay.o -MMD)
+I (..\periph\delay.h)(0x674D4982)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\periph\i2c.h)(0x6A70716C)
+F (..\periph\flash.c)(0x69270630)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/flash.o -MMD)
+I (..\periph\flash.h)(0x6927058C)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\delay.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\periph\i2c.h)(0x6A70716C)
+F (..\periph\gpio.c)(0x6A718F7B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/gpio.o -MMD)
+I (..\periph\gpio.h)(0x674D4982)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\delay.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\periph\i2c.h)(0x6A70716C)
+F (..\periph\subghz.c)(0x6A61ED4F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/subghz.o -MMD)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\delay.h)(0x674D4982)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\periph\i2c.h)(0x6A70716C)
+F (..\periph\uart.c)(0x6932E0C6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/uart.o -MMD)
+I (..\periph\uart.h)(0x674D4982)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\delay.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\periph\i2c.h)(0x6A70716C)
+F (..\periph\i2c.c)(0x6A708190)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/i2c.o -MMD)
+I (..\periph\i2c.h)(0x6A70716C)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\delay.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+F (..\periph\encoder.c)(0x6A71F030)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/encoder.o -MMD)
+I (..\periph\encoder.h)(0x6A718A27)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\delay.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\periph\i2c.h)(0x6A70716C)
+F (..\cli\command_interpreter.c)(0x6A17DB3A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/command_interpreter.o -MMD)
+I (..\cli\command_interpreter.h)(0x6A17DB1A)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\delay.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\periph\i2c.h)(0x6A70716C)
+F (..\app\app_cli.c)(0x6A61E702)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/app_cli.o -MMD)
+I (..\app\app_cli.h)(0x6A1D0739)
+I (..\cli\command_interpreter.h)(0x6A17DB1A)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\delay.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\periph\i2c.h)(0x6A70716C)
+I (..\periph\adc.h)(0x674D4982)
+F (..\app\bsp.c)(0x6A732B26)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/bsp.o -MMD)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\delay.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\periph\i2c.h)(0x6A70716C)
+I (..\periph\gpio.h)(0x674D4982)
+I (..\periph\adc.h)(0x674D4982)
+I (..\periph\ustimer.h)(0x6926C72F)
+I (..\app\stm32wlxx_it.h)(0x69E9BDAB)
+I (..\periph\encoder.h)(0x6A718A27)
+F (..\app\main.c)(0x6A71A4C5)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/main.o -MMD)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\delay.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\periph\i2c.h)(0x6A70716C)
+I (..\app\app_cli.h)(0x6A1D0739)
+I (..\cli\command_interpreter.h)(0x6A17DB1A)
+I (..\app\menu.h)(0x6A71A8AD)
+I (..\..\micromenu\micromenu.h)(0x674D4983)
+I (..\periph\adc.h)(0x674D4982)
+F (..\app\retarget.c)(0x6A61E5A4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/retarget.o -MMD)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\delay.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\periph\i2c.h)(0x6A70716C)
+F (..\app\stm32wlxx_it.c)(0x6A708EF4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/stm32wlxx_it.o -MMD)
+I (..\app\stm32wlxx_it.h)(0x69E9BDAB)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\delay.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\periph\i2c.h)(0x6A70716C)
+F (..\app\test_packet.c)(0x6A7341EC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/test_packet.o -MMD)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\delay.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\periph\i2c.h)(0x6A70716C)
+I (..\app\menu.h)(0x6A71A8AD)
+I (..\..\micromenu\micromenu.h)(0x674D4983)
+I (..\periph\adc.h)(0x674D4982)
+F (..\app\menu.c)(0x6A73404D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/menu.o -MMD)
+I (..\app\menu.h)(0x6A71A8AD)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\delay.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\periph\i2c.h)(0x6A70716C)
+I (..\..\micromenu\micromenu.h)(0x674D4983)
+I (..\periph\adc.h)(0x674D4982)
+I (..\radiohal\radio.h)(0x6A0D9E77)
+I (..\radiohal\sx127x_interface.h)(0x6A1802A5)
+I (..\app\app_cli.h)(0x6A1D0739)
+I (..\cli\command_interpreter.h)(0x6A17DB1A)
+F (..\radiofunc\radio_func.c)(0x6A6209C6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/radio_func.o -MMD)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\delay.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\periph\i2c.h)(0x6A70716C)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+F (..\radioproc\radio_proc.c)(0x6A71A8AD)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/radio_proc.o -MMD)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\delay.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\periph\i2c.h)(0x6A70716C)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\app\menu.h)(0x6A71A8AD)
+I (..\..\micromenu\micromenu.h)(0x674D4983)
+I (..\periph\adc.h)(0x674D4982)
+F (..\radioproc\sx126x_proc.c)(0x6A6210AB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/sx126x_proc.o -MMD)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\delay.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\periph\i2c.h)(0x6A70716C)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+F (..\..\radiodriver\sx126x\lr_fhss_mac.c)(0x68F1CE0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/lr_fhss_mac.o -MMD)
+I (..\..\radiodriver\sx126x\lr_fhss_mac.h)(0x68F1CE0E)
+I (..\..\radiodriver\sx126x\lr_fhss_v1_base_types.h)(0x68F1CE0E)
+F (..\..\radiodriver\sx126x\sx126x.c)(0x6A198CCF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/sx126x.o -MMD)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\..\radiodriver\sx126x\sx126x_hal.h)(0x699DB93A)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+F (..\..\radiodriver\sx126x\sx126x_bpsk.c)(0x68F1CE0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/sx126x_bpsk.o -MMD)
+I (..\..\radiodriver\sx126x\sx126x_bpsk.h)(0x68F1CE0E)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\..\radiodriver\sx126x\sx126x_hal.h)(0x699DB93A)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+F (..\..\radiodriver\sx126x\sx126x_driver_version.c)(0x68F1CE0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/sx126x_driver_version.o -MMD)
+I (..\..\radiodriver\sx126x\sx126x_driver_version.h)(0x68F1CE0E)
+F (..\..\radiodriver\sx126x\sx126x_hal.c)(0x699E97AC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/sx126x_hal.o -MMD)
+I (..\..\radiodriver\sx126x\sx126x_hal.h)(0x699DB93A)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\delay.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\periph\i2c.h)(0x6A70716C)
+F (..\..\radiodriver\sx126x\sx126x_lr_fhss.c)(0x68F1CE0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/sx126x_lr_fhss.o -MMD)
+I (..\..\radiodriver\sx126x\lr_fhss_mac.h)(0x68F1CE0E)
+I (..\..\radiodriver\sx126x\lr_fhss_v1_base_types.h)(0x68F1CE0E)
+I (..\..\radiodriver\sx126x\sx126x_lr_fhss.h)(0x68F1CE0E)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\..\radiodriver\sx126x\sx126x_hal.h)(0x699DB93A)
+F (..\radiohal\sx126x_interface.c)(0x6A61ED4E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/sx126x_interface.o -MMD)
+I (..\..\radiodriver\sx126x\sx126x_hal.h)(0x699DB93A)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\delay.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\periph\i2c.h)(0x6A70716C)
+F (..\..\stm32wle5\system_stm32wlxx.c)(0x674D4983)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/system_stm32wlxx.o -MMD)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+F (..\..\stm32wle5\startup_stm32wle5xx.s)(0x674D4983)(--target=armv7em-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4 -Wa,armasm,--pd,"__MICROLIB SETA 1"-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 543" -Wa,armasm,--pd,"STM32WLE5xx SETA 1"-o ./objects/startup_stm32wle5xx.o)
+F (..\..\stm32wle5\lib\Src\stm32wlxx_ll_adc.c)(0x674D4984)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/stm32wlxx_ll_adc.o -MMD)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+F (..\..\stm32wle5\lib\Src\stm32wlxx_ll_exti.c)(0x674D4984)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/stm32wlxx_ll_exti.o -MMD)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+F (..\..\stm32wle5\lib\Src\stm32wlxx_ll_gpio.c)(0x674D4984)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/stm32wlxx_ll_gpio.o -MMD)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+F (..\..\stm32wle5\lib\Src\stm32wlxx_ll_pwr.c)(0x674D4984)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/stm32wlxx_ll_pwr.o -MMD)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+F (..\..\stm32wle5\lib\Src\stm32wlxx_ll_rcc.c)(0x674D4984)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/stm32wlxx_ll_rcc.o -MMD)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+F (..\..\stm32wle5\lib\Src\stm32wlxx_ll_spi.c)(0x674D4984)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/stm32wlxx_ll_spi.o -MMD)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+F (..\..\stm32wle5\lib\Src\stm32wlxx_ll_tim.c)(0x674D4984)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/stm32wlxx_ll_tim.o -MMD)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+F (..\..\stm32wle5\lib\Src\stm32wlxx_ll_usart.c)(0x674D4984)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/stm32wlxx_ll_usart.o -MMD)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+F (..\..\stm32wle5\lib\Src\stm32wlxx_ll_utils.c)(0x674D4984)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/stm32wlxx_ll_utils.o -MMD)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+F (..\..\stm32wle5\lib\Src\stm32wlxx_ll_i2c.c)(0x674D4984)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/stm32wlxx_ll_i2c.o -MMD)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+F (..\SSD1306\gui.c)(0x674D4983)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/gui.o -MMD)
+I (..\SSD1306\oledfont.h)(0x674F0AAD)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\delay.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\periph\i2c.h)(0x6A70716C)
+F (..\SSD1306\ssd1306.c)(0x6A706F06)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/ssd1306.o -MMD)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\delay.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\periph\i2c.h)(0x6A70716C)
+F (..\SSD1306\ssd1306_interface.c)(0x6A707161)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/ssd1306_interface.o -MMD)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\delay.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\periph\i2c.h)(0x6A70716C)
+F (..\..\micromenu\MicroMenu.c)(0x674D4983)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/micromenu.o -MMD)
+I (..\..\micromenu\MicroMenu.h)(0x674D4983)
+F (..\mesh\pb_functions.c)(0x6A9010E1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/pb_functions.o -MMD)
+I (..\mesh\pb_functions.h)(0x6A90164E)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\delay.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\periph\i2c.h)(0x6A70716C)
+F (..\mesh\meshtastic_pb.c)(0x6A901161)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/meshtastic_pb.o -MMD)
+I (..\mesh\meshtastic_pb.h)(0x6A9015F8)
+I (..\mesh\pb_functions.h)(0x6A90164E)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\delay.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\periph\i2c.h)(0x6A70716C)
+F (..\mesh\meshtastic.c)(0x6A90091A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../mesh -I ../periph -I ../radiofunc -I ../radiohal -I ../radioproc -I ../../radiodriver/sx126x -I ../../stm32wle5/lib/Inc -I ../../stm32wle5/lib/Inc/Legacy -I ../../stm32wle5 -I ../SSD1306 -I ../../micromenu-IC:/Users/Admin/AppData/Local/Arm/Packs/Keil/STM32WLxx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32WLxx/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DSTM32WLE5xx -DCORE_CM4 -DSTM32WLE5xx -DUSE_FULL_LL_DRIVER-o ./objects/meshtastic.o -MMD)
+I (..\mesh\meshtastic.h)(0x68F8DEA2)
+I (..\app\bsp.h)(0x6A732B26)
+I (..\..\stm32wle5\system_stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_rcc.h)(0x674D4984)
+I (..\..\stm32wle5\stm32wlxx.h)(0x674D4983)
+I (..\..\stm32wle5\stm32wle5xx.h)(0x674D4983)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmInstr.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cmFunc.h)(0x559D3FFA)
+I (C:\Keil_v535\ARM\CMSIS\Include\core_cm4_simd.h)(0x559D3FFA)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_system.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_bus.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_gpio.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_exti.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_usart.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_spi.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_adc.h)(0x674D4983)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_pwr.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_tim.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_utils.h)(0x674D4984)
+I (..\..\stm32wle5\lib\Inc\stm32wlxx_ll_i2c.h)(0x674D4983)
+I (..\app\retarget.h)(0x6932D948)
+I (..\periph\uart.h)(0x674D4982)
+I (..\periph\delay.h)(0x674D4982)
+I (..\periph\subghz.h)(0x6A61EC98)
+I (..\radioproc\radio_proc.h)(0x6A6209C6)
+I (..\radiofunc\radio_func.h)(0x6A61D65A)
+I (..\radiofunc\userdata_defs.h)(0x6A620E34)
+I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
+I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
+I (..\radioproc\common_defs.h)(0x674D4982)
+I (..\radioproc\sx126x_proc.h)(0x6A61ED85)
+I (..\periph\flash.h)(0x6927058C)
+I (..\radiohal\sx126x_rfsw.h)(0x6A61ED4F)
+I (..\..\radiodriver\sx126x\sx126x_regs.h)(0x68F1CE0E)
+I (..\app\test_packet.h)(0x6A26CC40)
+I (..\SSD1306\gui.h)(0x674D4983)
+I (..\SSD1306\ssd1306.h)(0x674D4983)
+I (..\SSD1306\ssd1306_interface.h)(0x6A7068BA)
+I (..\periph\i2c.h)(0x6A70716C)
+I (..\app\menu.h)(0x6A71A8AD)
+I (..\..\micromenu\micromenu.h)(0x674D4983)
+I (..\periph\adc.h)(0x674D4982)

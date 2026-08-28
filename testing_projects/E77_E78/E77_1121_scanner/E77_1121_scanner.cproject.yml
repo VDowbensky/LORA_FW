@@ -1,0 +1,130 @@
+project:
+  packs:
+    - pack: ARM::CMSIS@^5.9.0
+    - pack: Keil::STM32WLxx_DFP@^1.2.0
+    - pack: ARM::CMSIS-NN@^4.0.0
+    - pack: ARM::CMSIS-DSP@^1.10.1
+  setups:
+    - setup: Options for stm32wle5cc
+      add-path:
+        - user
+        - radio
+        - periph
+        - ../common/stm32wle5
+        - ../common/cli
+        - ../common/stm32wle5_lib/Inc
+        - ../common/micromenu
+        - ../common/radiodriver/lr112x
+        - ../common/radiodriver/sx126x
+        - ../common/SSD1306
+      debug: "on"
+      define:
+        - CORE_CM4
+        - STM32WLE5xx
+        - USE_FULL_LL_DRIVER
+        - __MICROLIB
+      define-asm:
+        - __MICROLIB
+      misc:
+        - C:
+            - -std=c99
+          C-CPP:
+            - -fno-rtti
+            - -funsigned-char
+            - -fshort-enums
+            - -fshort-wchar
+            - -ffunction-sections
+            - -Wno-packed
+            - -Wno-missing-variable-declarations
+            - -Wno-missing-prototypes
+            - -Wno-missing-noreturn
+            - -Wno-sign-conversion
+            - -Wno-nonportable-include-path
+            - -Wno-reserved-id-macro
+            - -Wno-unused-macros
+            - -Wno-documentation-unknown-command
+            - -Wno-documentation
+            - -Wno-license-management
+            - -Wno-parentheses-equality
+          CPP:
+            - -xc++
+            - -std=c++11
+            - -fno-exceptions
+          ASM:
+            - -masm=auto
+          Link:
+            - --library_type=microlib
+            - --map
+            - --load_addr_map_info
+            - --xref
+            - --callgraph
+            - --symbols
+            - --info sizes
+            - --info totals
+            - --info unused
+            - --info veneers
+            - --strict
+            - --summary_stderr
+            - --info summarysizes
+  linker:
+    - script: E77_1121_scanner_stm32wle5cc.sct
+  groups:
+    - group: user
+      files:
+        - file: user/app_cli.c
+        - file: user/bsp.c
+        - file: user/main.c
+        - file: user/retarget.c
+        - file: user/stm32wlxx_it.c
+        - file: user/menu.c
+    - group: startup
+      files:
+        - file: ../common/stm32wle5/system_stm32wlxx.c
+        - file: ../common/stm32wle5/startup_stm32wle5xx.s
+          misc:
+            - ASM:
+                - -masm=auto
+    - group: lib
+      files:
+        - file: ../common/stm32wle5_lib/Src/stm32wlxx_ll_adc.c
+        - file: ../common/stm32wle5_lib/Src/stm32wlxx_ll_exti.c
+        - file: ../common/stm32wle5_lib/Src/stm32wlxx_ll_gpio.c
+        - file: ../common/stm32wle5_lib/Src/stm32wlxx_ll_pwr.c
+        - file: ../common/stm32wle5_lib/Src/stm32wlxx_ll_rcc.c
+        - file: ../common/stm32wle5_lib/Src/stm32wlxx_ll_spi.c
+        - file: ../common/stm32wle5_lib/Src/stm32wlxx_ll_tim.c
+        - file: ../common/stm32wle5_lib/Src/stm32wlxx_ll_usart.c
+        - file: ../common/stm32wle5_lib/Src/stm32wlxx_ll_utils.c
+    - group: peripherals
+      files:
+        - file: periph/subghz.c
+        - file: periph/uart.c
+        - file: periph/ustimer.c
+        - file: periph/adc.c
+        - file: periph/aux_spi.c
+        - file: periph/delay.c
+        - file: periph/flash.c
+        - file: periph/gpio.c
+    - group: radio
+      files:
+        - file: radio/radio.c
+        - file: radio/lr112x_config.c
+        - file: radio/lr112x_interface.c
+        - file: radio/sx126x_config.c
+        - file: radio/sx126x_interface.c
+        - file: ../common/radiodriver/lr112x/lr112x.c
+        - file: ../common/radiodriver/sx126x/sx126x.c
+    - group: cli
+      files:
+        - file: ../common/cli/command_interpreter.c
+    - group: SSD1306
+      files:
+        - file: ../common/SSD1306/gui.c
+        - file: ../common/SSD1306/ssd1306.c
+        - file: ../common/SSD1306/test.c
+        - file: user/ssd1306_interface.c
+    - group: micromenu
+      files:
+        - file: ../common/micromenu/MicroMenu.c
+  components:
+    - component: ARM::CMSIS:CORE
