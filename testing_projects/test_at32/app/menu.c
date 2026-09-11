@@ -114,8 +114,8 @@ void display_sniffer_menu(void)
 	SSD1306_Clear(0);
 	GUI_ShowString(0,0,"1 Frequency",8,1);
 	GUI_ShowString(0,8,"2 BW",8,1);
-	GUI_ShowString(0,16,"3 CR",8,1);
-	GUI_ShowString(0,24,"4 SF",8,1);
+	GUI_ShowString(0,16,"3 SF",8,1);
+	GUI_ShowString(0,24,"4 CR",8,1);
 	GUI_ShowString(0,32,"5 LDRO",8,1);
 	GUI_ShowString(0,40,"6 Packet format",8,1);
 	GUI_ShowString(0,48,"7 Sync Word",8,1);
