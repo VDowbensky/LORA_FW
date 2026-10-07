@@ -5558,6 +5558,7 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
+<<<<<<< HEAD
         20          4          0          0          0       8442   adc.o
       3878       1570       1045        688        276      15569   app_cli.o
        612        112          0          9          5       8665   bsp.o
@@ -5596,6 +5597,46 @@ Image component sizes
 
     ----------------------------------------------------------------------
      20880       3908       5964        716       4720     240627   Object Totals
+=======
+        20          4          0          0          0       8445   adc.o
+      3878       1570       1045        688        276      15570   app_cli.o
+       612        112          0          9          5       8668   bsp.o
+      1146         90         99          0          0       8405   command_interpreter.o
+        86         12          0          0          0       4113   delay.o
+       232         12          0          0         10       5606   encoder.o
+       340         36          0          0          0       2439   flash.o
+       120         12          0          0          0       2676   gpio.o
+       294          8       2280          0          0      11892   gui.o
+       224         32          0          0          0       5565   i2c.o
+       208         76          0          0          0        603   main.o
+      4352        784       1632          1          1      15821   menu.o
+       834        276        218          0          0       2157   meshtastic.o
+       100         12         24          4          4       1637   micromenu.o
+      1002         56          0          0        686      10142   radio_func.o
+      1200        228         30          4        562       5396   radio_proc.o
+       192         28          0          0        528       3168   retarget.o
+       184         36          0          0       1024       2116   ssd1306.o
+        34          0          0          0         64       1228   ssd1306_interface.o
+        36          8        312          0       1024        828   startup_stm32wle5xx.o
+        34          0          0          0          0       1832   stm32wlxx_it.o
+       336          0          0          0          0       5473   stm32wlxx_ll_gpio.o
+       418         40          0          0          0      12204   stm32wlxx_ll_rcc.o
+       128          0          0          0          0       5267   stm32wlxx_ll_spi.o
+       120          4          0          0          0      12486   stm32wlxx_ll_tim.o
+       232         60          0          0          0       5116   stm32wlxx_ll_usart.o
+        12          4          0          0          0       9551   stm32wlxx_ll_utils.o
+       416         48          0          0          0       9352   subghz.o
+      1640          4          0          0          0      39318   sx126x.o
+       198          0          0          0          0       2431   sx126x_hal.o
+        68          8          0          0          0       2820   sx126x_interface.o
+       818         40          0          0          0       6849   sx126x_proc.o
+       166         28        160          4          0       2402   system_stm32wlxx.o
+       896        264         21          0        520       2268   test_packet.o
+       260         16          0          0          0       6850   uart.o
+
+    ----------------------------------------------------------------------
+     20880       3908       5964        716       4720     240694   Object Totals
+>>>>>>> e515ebbf6f30beb19cd130321874fe0be6651607
          0          0         64          0          0          0   (incl. Generated)
         44          0         79          6         16          0   (incl. Padding)
 
@@ -5681,8 +5722,13 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
+<<<<<<< HEAD
      27064       4060       6100        724       4720     242155   Grand Totals
      27064       4060       6100        408       4720     242155   ELF Image Totals (compressed)
+=======
+     27064       4060       6100        724       4720     242222   Grand Totals
+     27064       4060       6100        408       4720     242222   ELF Image Totals (compressed)
+>>>>>>> e515ebbf6f30beb19cd130321874fe0be6651607
      27064       4060       6100        408          0          0   ROM Totals
 
 ==============================================================================

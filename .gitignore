@@ -1,2 +1,8 @@
+<<<<<<< HEAD
 /testing_projects/test_e77/MDK_V5/Objects
 /testing_projects/test_e77/MDK_V5/Objects
+=======
+*.o
+*.Admin
+*.htm
+>>>>>>> e515ebbf6f30beb19cd130321874fe0be6651607
