@@ -15,6 +15,8 @@ void tud_mount_cb(void);
 void tud_umount_cb(void);
 void usb_task(void);
 
+void flush_tx_to_usb(void);
+
 void cdc_print(uint8_t itf,char* str);
 
 extern uint8_t tud_rx_buffer[];

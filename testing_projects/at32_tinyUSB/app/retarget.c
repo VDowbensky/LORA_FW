@@ -1,78 +1,80 @@
 #include "retarget.h"
 
-/* Receive buffer */
-
-static volatile int     rxReadIndex  = 0;       /**< Index in buffer to be read */
-static volatile int     rxWriteIndex = 0;       /**< Index in buffer to be written to */
-volatile int     rxCount      = 0;       /**< Keeps track of how much data which are stored in the buffer */
-//uint8_t rxBuffer[RXBUFSIZE];    /**< Buffer to store data */
-//uint8_t txBuffer[TXBUFSIZE];    /**< Buffer to store data */
 static bool initialized = false;    /**< Initialize UART/LEUART */
 
 extern uint32_t Receive_length;
 volatile int txCount = 0;
 
-//uint16_t usb_tx_write_index = 0;
-//uint16_t usb_tx_read_index = 0;
-
-//extern volatile uint32_t packet_sent,packet_receive;
-
-/**************************************************************************//**
- * @brief Intializes UART/LEUART
- *****************************************************************************/
-void RETARGET_Init(void)
+int RETARGET_WriteChar(char c)
 {
-#if !defined(__CROSSWORKS_ARM) && defined(__GNUC__)
-  setvbuf(stdout, NULL, _IONBF, 0);   /*Set unbuffered mode for stdout (newlib)*/
-#endif
-  initialized = true;
+	uint16_t next = (cdc_tx_ring.head + 1) % cdc_tx_ring.size;
+	// якщо буфер ќ—№-ќ—№ ѕ≈–≈ѕќ¬Ќ»“№—я (залишилос€ мало м≥сц€)
+	// або €кщо в≥н уже повний (next == tail)
+	while (next == cdc_tx_ring.tail) 
+	{
+		// ѕримусово виштовхуЇмо дан≥ в USB, зв≥льн€ючи м≥сце в к≥льцевому буфер≥
+		flush_tx_to_usb();
+	}
+	// “епер м≥сце точно Ї, безпечно пушимо з вимкненн€м переривань
+	__disable_irq();
+	ringbuf_push(&cdc_tx_ring, (uint8_t)c);
+	__enable_irq();
+	return c;
 }
 
 
+void RETARGET_Init(void)
+{
+#if !defined(__CROSSWORKS_ARM) && defined(__GNUC__)
+  setvbuf(stdout, NULL, _IONBF, 0); 
+	setvbuf(stdin, NULL, _IONBF, 0);
+#endif
+  initialized = true;
+}
 
 #define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
 
 PUTCHAR_PROTOTYPE
 {
-    RETARGET_WriteChar((uint8_t)ch);
-    return ch;
+	RETARGET_WriteChar((uint8_t)ch);
+	return ch;
 }
-
-
-/**************************************************************************//**
- * @brief Receive a byte from USART/LEUART and put into global buffer
- * @return -1 on failure, or positive character integer on sucesss
- *****************************************************************************/
 
 int RETARGET_ReadChar(void)
 {
-	return ringbuf_pop(&cdc_rx_ring);
+	__disable_irq();
+	int ret = ringbuf_pop(&cdc_rx_ring);
+	__enable_irq();
+	return ret;
 }
 
+//int RETARGET_WriteChar(char c)
+//{
+//	__disable_irq(); 
+//	ringbuf_push(&cdc_tx_ring,c);
+//	__enable_irq(); 
+//	return c;
+//}
 
-/**************************************************************************//**
- * @brief Transmit single byte to USART/LEUART
- * @param c Character to transmit
- * @return Transmitted character
- *****************************************************************************/
-
-int RETARGET_WriteChar(char c)
-{
-	ringbuf_push(&cdc_tx_ring,c);
-	return c;
-}
-
-//int putc(int c, FILE * stream)
 int stdout_putchar(int c, FILE * stream)
 {
 	RETARGET_WriteChar(c);
 	return c; //return the character written to denote a successfull write
 }
 
-//int getc(FILE * stream)
 int stdin_getchar(FILE * stream)
 {
 	char c = RETARGET_ReadChar();
 	return c;
 }
+
+int fgetc(FILE *f)
+{
+	int ch;
+	// „екаЇмо, поки в к≥льцевому буфер≥ з'€витьс€ символ з USB
+	while ((ch = RETARGET_ReadChar()) == -1) tud_task(); // ѕрокручуЇмо USB стек п≥д час оч≥куванн€
+	return ch;
+}
+
+
 

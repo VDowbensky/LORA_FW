@@ -71,6 +71,7 @@ int RETARGET_ReadChar(void)
 int RETARGET_WriteChar(char c)
 {
   if (initialized == false) RETARGET_Init();
+	//change to fill ring buffer
 	txBuffer[usb_tx_write_index] = c;
 	usb_tx_write_index++;
 	usb_tx_write_index &= (TXBUFSIZE-1);
@@ -80,8 +81,8 @@ int RETARGET_WriteChar(char c)
 //int putc(int c, FILE * stream)
 int stdout_putchar(int c, FILE * stream)
 {
-	RETARGET_WriteChar(c);
-	return c; //return the character written to denote a successfull write
+	return RETARGET_WriteChar(c);
+	//return c; //return the character written to denote a successfull write
 }
 
 //int getc(FILE * stream)

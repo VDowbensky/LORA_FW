@@ -45,23 +45,10 @@ int __putchar(int ch);
 int __getchar(void);
 #endif
 
-//#define RXBUFSIZE    		512 /**< Buffer size for RX */
-//#define TXBUFSIZE				512
-
 int  RETARGET_ReadChar(void);
 int  RETARGET_WriteChar(char c);
 
-void RETARGET_CrLf(int on);
 void RETARGET_Init(void);
-
-//extern uint8_t rxBuffer[];
-//extern uint8_t txBuffer[];
-//extern volatile int rxCount;
-//extern volatile int txCount;
-
-//extern uint16_t usb_tx_write_index;
-//extern uint16_t usb_tx_read_index;
-
 
 #ifdef __cplusplus
 }

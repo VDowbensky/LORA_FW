@@ -11,7 +11,7 @@
 
 
 CommandState_t state;
-char ciBuffer[256];
+char ciBuffer[512];
 //uint8_t printmode = 0;
 //uint8_t txmode = 0;
 //General
@@ -171,8 +171,12 @@ void cli_init(void)
 
 void cli_proc(void)
 {
-  char input = RETARGET_ReadChar();
-  if(input != '\0' && input != 0xFF) ciProcessInput(&state, &input, 1);
+  int32_t input = RETARGET_ReadChar();
+	if(input != '\0' && input != -1) 
+	{
+		char val = input & 0xff;
+		ciProcessInput(&state, &val, 1);
+	}
 }
 
 void ciErrorCallback(char* command, CommandError_t error)

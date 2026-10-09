@@ -43,7 +43,7 @@ I (..\SSD1306\ssd1306_interface.h)(0x692FF3F9)
 I (..\SSD1306\test.h)(0x674D4984)
 I (..\periph\wk_spi.h)(0x68EF993C)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -59,7 +59,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 I (..\radiofunc\userdata_defs.h)(0x69FC8C6B)
 I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
 I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
@@ -1302,7 +1302,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -1318,8 +1318,8 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
-F (..\app\app_cli.c)(0x6A44B2D3)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/app_cli.o -MMD)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
+F (..\app\app_cli.c)(0x6AC8DECC)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/app_cli.o -MMD)
 I (..\app\app_cli.h)(0x6A1D0739)
 I (..\cli\command_interpreter.h)(0x6A17DB1A)
 I (..\app\bsp.h)(0x6A69E4C7)
@@ -1445,7 +1445,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -1461,10 +1461,10 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
-I (..\app\retarget.h)(0x6A69E9BE)
-F (..\app\retarget.c)(0x6A69EA59)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/retarget.o -MMD)
-I (..\app\retarget.h)(0x6A69E9BE)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
+I (..\app\retarget.h)(0x6AC8D362)
+F (..\app\retarget.c)(0x6AC8E436)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/retarget.o -MMD)
+I (..\app\retarget.h)(0x6AC8D362)
 I (..\app\bsp.h)(0x6A69E4C7)
 I (..\periph\wk_system.h)(0x68F0AC0A)
 I (..\libraries\cmsis\cm4\device_support\at32f413.h)(0x68B19280)
@@ -1588,7 +1588,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -1604,8 +1604,8 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
-F (..\app\bsp.c)(0x6A6A002D)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/bsp.o -MMD)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
+F (..\app\bsp.c)(0x6AC8DECC)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/bsp.o -MMD)
 I (..\app\bsp.h)(0x6A69E4C7)
 I (..\periph\wk_system.h)(0x68F0AC0A)
 I (..\libraries\cmsis\cm4\device_support\at32f413.h)(0x68B19280)
@@ -1729,7 +1729,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -1745,7 +1745,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 F (..\app\flash.c)(0x68E7A8F7)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/flash.o -MMD)
 I (..\app\flash.h)(0x68F8BA87)
 I (..\app\bsp.h)(0x6A69E4C7)
@@ -1870,7 +1870,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -1886,8 +1886,8 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
-F (..\app\main.c)(0x6A69FEBC)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/main.o -MMD)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
+F (..\app\main.c)(0x6AC8DECC)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/main.o -MMD)
 I (..\periph\at32f413_wk_config.h)(0x6A2BEB25)
 I (..\libraries\cmsis\cm4\device_support\at32f413.h)(0x68B19280)
 I (..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x68B19280)
@@ -2020,7 +2020,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -2036,8 +2036,8 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
-I (..\app\retarget.h)(0x6A69E9BE)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
+I (..\app\retarget.h)(0x6AC8D362)
 I (..\app\menu.h)(0x6A1994D8)
 I (..\app\num_input.h)(0x6A0EF615)
 F (..\app\keypad.c)(0x6A462557)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/keypad.o -MMD)
@@ -2164,7 +2164,7 @@ I (..\radiohal\pan_interface.h)(0x68FF0620)
 I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -2180,7 +2180,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 F (..\app\menu.c)(0x6A6217A6)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/menu.o -MMD)
 I (..\app\menu.h)(0x6A1994D8)
 I (..\app\bsp.h)(0x6A69E4C7)
@@ -2306,7 +2306,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -2322,11 +2322,11 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 I (..\app\num_input.h)(0x6A0EF615)
 I (..\app\app_cli.h)(0x6A1D0739)
 I (..\cli\command_interpreter.h)(0x6A17DB1A)
-I (..\app\retarget.h)(0x6A69E9BE)
+I (..\app\retarget.h)(0x6AC8D362)
 F (..\app\num_input.c)(0x6A1D0739)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/num_input.o -MMD)
 I (..\app\num_input.h)(0x6A0EF615)
 I (..\app\keypad.h)(0x6A2A3B5E)
@@ -2452,7 +2452,7 @@ I (..\radiohal\pan_interface.h)(0x68FF0620)
 I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -2468,7 +2468,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 F (..\app\test_packet.c)(0x6A3005D7)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/test_packet.o -MMD)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\bsp.h)(0x6A69E4C7)
@@ -2593,7 +2593,7 @@ I (..\radiohal\pan_interface.h)(0x68FF0620)
 I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -2609,7 +2609,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 F (..\mesh\meshtastic.c)(0x6A4E077F)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/meshtastic.o -MMD)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\bsp.h)(0x6A69E4C7)
@@ -2734,7 +2734,7 @@ I (..\radiohal\pan_interface.h)(0x68FF0620)
 I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -2750,7 +2750,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 F (..\mesh\meshcore.c)(0x6A4E2E4F)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/meshcore.o -MMD)
 I (..\mesh\meshcore.h)(0x6A4E2E19)
 I (..\app\bsp.h)(0x6A69E4C7)
@@ -2876,7 +2876,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -2892,9 +2892,9 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
-F (..\app\ring_buffer.c)(0x6A69E4C7)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/ring_buffer.o -MMD)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
+F (..\app\ring_buffer.c)(0x6AC8D6A5)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/ring_buffer.o -MMD)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 F (..\SSD1306\gui.c)(0x674D4984)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/gui.o -MMD)
 I (..\SSD1306\oledfont.h)(0x6A0EF072)
 I (..\SSD1306\gui.h)(0x674D4984)
@@ -3018,7 +3018,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -3034,7 +3034,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 I (..\SSD1306\ssd1306.h)(0x674D4984)
 I (..\SSD1306\ssd1306_interface.h)(0x692FF3F9)
 F (..\SSD1306\ssd1306.c)(0x674D4984)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/ssd1306.o -MMD)
@@ -3160,7 +3160,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -3176,7 +3176,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 I (..\SSD1306\ssd1306_interface.h)(0x692FF3F9)
 F (..\SSD1306\ssd1306_interface.c)(0x692FF4C0)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/ssd1306_interface.o -MMD)
 I (..\SSD1306\ssd1306_interface.h)(0x692FF3F9)
@@ -3302,7 +3302,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -3318,7 +3318,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 F (..\SSD1306\test.c)(0x674D4984)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/test.o -MMD)
 I (..\SSD1306\gui.h)(0x674D4984)
 I (..\app\bsp.h)(0x6A69E4C7)
@@ -3441,7 +3441,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -3457,7 +3457,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 I (..\SSD1306\ssd1306.h)(0x674D4984)
 I (..\SSD1306\ssd1306_interface.h)(0x692FF3F9)
 I (..\SSD1306\bmp.h)(0x674D4984)
@@ -3506,7 +3506,7 @@ I (..\radioproc\radio_proc.h)(0x6A4E0762)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -3522,7 +3522,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 I (..\radiofunc\userdata_defs.h)(0x69FC8C6B)
 I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
 I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
@@ -3725,7 +3725,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -3741,7 +3741,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 I (..\radioproc\common_defs.h)(0x674D4982)
 F (..\radioproc\lr112x_proc.c)(0x6A4275BE)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/lr112x_proc.o -MMD)
 I (..\radioproc\lr112x_proc.h)(0x6A197C67)
@@ -3867,7 +3867,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -3883,7 +3883,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 F (..\radioproc\pan_proc.c)(0x6A1FFEFB)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/pan_proc.o -MMD)
 I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\app\bsp.h)(0x6A69E4C7)
@@ -4008,7 +4008,7 @@ I (..\radiohal\pan_interface.h)(0x68FF0620)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -4024,7 +4024,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 F (..\radioproc\radio_proc.c)(0x6A462557)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/radio_proc.o -MMD)
 I (..\radioproc\radio_proc.h)(0x6A4E0762)
 I (..\radiofunc\radio_func.h)(0x6A1EC4C0)
@@ -4068,7 +4068,7 @@ I (..\SSD1306\ssd1306_interface.h)(0x692FF3F9)
 I (..\SSD1306\test.h)(0x674D4984)
 I (..\periph\wk_spi.h)(0x68EF993C)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -4084,7 +4084,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 I (..\radiofunc\userdata_defs.h)(0x69FC8C6B)
 I (..\..\radiodriver\sx126x\sx126x.h)(0x6A198CCF)
 I (..\..\radiodriver\sx126x\sx126x_status.h)(0x68F1CE0E)
@@ -4291,7 +4291,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -4307,7 +4307,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 I (..\app\flash.h)(0x68F8BA87)
 F (..\radioproc\sx128x_proc.c)(0x6A197F1F)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/sx128x_proc.o -MMD)
 I (..\radioproc\SX128X_proc.h)(0x6A197B6F)
@@ -4433,7 +4433,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -4449,7 +4449,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 F (..\radioproc\lr202x_proc.c)(0x6A197F1F)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/lr202x_proc.o -MMD)
 I (..\radioproc\lr202x_proc.h)(0x6A197F1F)
 I (..\app\bsp.h)(0x6A69E4C7)
@@ -4574,7 +4574,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -4590,7 +4590,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 F (..\radioproc\sx127x_proc.c)(0x6A1FF86F)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/sx127x_proc.o -MMD)
 I (..\radioproc\sx127x_proc.h)(0x6A197A3D)
 I (..\app\bsp.h)(0x6A69E4C7)
@@ -4713,7 +4713,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -4729,7 +4729,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 I (..\..\radiodriver\sx127x\sx1276_regs.h)(0x658C1250)
 I (..\radiohal\sx127x_interface.h)(0x6A1802A5)
 F (..\..\radiodriver\lr11xx\lr11xx_bootloader.c)(0x68F1CE0E)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/lr11xx_bootloader.o -MMD)
@@ -4916,7 +4916,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -4932,7 +4932,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 F (..\..\radiodriver\lr20xx\lr20xx_driver_version.c)(0x68F1CE0E)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/lr20xx_driver_version.o -MMD)
 I (..\..\radiodriver\lr20xx\lr20xx_driver_version.h)(0x68F1CE0E)
 F (..\..\radiodriver\lr20xx\lr20xx_radio_bluetooth_le.c)(0x68F1CE0E)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/lr20xx_radio_bluetooth_le.o -MMD)
@@ -5178,7 +5178,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -5194,7 +5194,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 F (..\..\radiodriver\pan3029\pan_rf.c)(0x6A200D25)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/pan_rf.o -MMD)
 I (..\..\radiodriver\pan3029\pan_param.h)(0x6960E35A)
 I (..\..\radiodriver\pan3029\pan_rf.h)(0x69314B4D)
@@ -5320,7 +5320,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -5336,7 +5336,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 F (..\..\radiodriver\sx128x\sx128x.c)(0x68EF2D0C)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/sx128x.o -MMD)
 I (..\..\radiodriver\sx128x\sx128x_hal.h)(0x699DB9A0)
 I (..\..\radiodriver\sx128x\sx128x_regs.h)(0x68EF2D0C)
@@ -5466,7 +5466,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -5482,7 +5482,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 F (..\radiohal\pan_interface.c)(0x68FB7CB3)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/pan_interface.o -MMD)
 I (..\radiohal\pan_interface.h)(0x68FF0620)
 I (..\app\bsp.h)(0x6A69E4C7)
@@ -5607,7 +5607,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -5623,7 +5623,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 F (..\radiohal\lr11xx_interface.c)(0x6A047B40)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/lr11xx_interface.o -MMD)
 I (..\..\radiodriver\lr11xx\lr11xx_hal.h)(0x699DB843)
 I (..\app\bsp.h)(0x6A69E4C7)
@@ -5748,7 +5748,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -5764,7 +5764,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 F (..\radiohal\lr20xx_interface.c)(0x699E9898)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/lr20xx_interface.o -MMD)
 I (..\..\radiodriver\lr20xx\lr20xx_hal.h)(0x699DB8AF)
 I (..\app\bsp.h)(0x6A69E4C7)
@@ -5889,7 +5889,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -5905,7 +5905,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 F (..\radiohal\sx126x_interface.c)(0x699E9860)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/sx126x_interface.o -MMD)
 I (..\..\radiodriver\sx126x\sx126x_hal.h)(0x699DB93A)
 I (..\app\bsp.h)(0x6A69E4C7)
@@ -6031,7 +6031,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -6047,7 +6047,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 F (..\radiohal\sx128x_interface.c)(0x699E97CE)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/sx128x_interface.o -MMD)
 I (..\..\radiodriver\sx128x\sx128x_hal.h)(0x699DB9A0)
 I (..\app\bsp.h)(0x6A69E4C7)
@@ -6173,7 +6173,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -6189,7 +6189,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 F (..\radiohal\sx127x_interface.c)(0x6A1FF86F)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/sx127x_interface.o -MMD)
 I (..\radiohal\sx127x_interface.h)(0x6A1802A5)
 I (..\app\bsp.h)(0x6A69E4C7)
@@ -6314,7 +6314,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -6330,7 +6330,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 F (..\..\radiodriver\sx126x\lr_fhss_mac.c)(0x68F1CE0E)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/lr_fhss_mac.o -MMD)
 I (..\..\radiodriver\sx126x\lr_fhss_mac.h)(0x68F1CE0E)
 I (..\..\radiodriver\sx126x\lr_fhss_v1_base_types.h)(0x68F1CE0E)
@@ -6471,7 +6471,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)
@@ -6487,7 +6487,7 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 F (..\..\radiodriver\sx126x\sx126x_lr_fhss.c)(0x68F1CE0E)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/sx126x_lr_fhss.o -MMD)
 I (..\..\radiodriver\sx126x\lr_fhss_mac.h)(0x68F1CE0E)
 I (..\..\radiodriver\sx126x\lr_fhss_v1_base_types.h)(0x68F1CE0E)
@@ -6530,8 +6530,8 @@ I (..\tinyUSB\src\common\tusb_fifo.h)(0x69A6C1F8)
 I (..\tinyUSB\src\device\usbd.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc_device.h)(0x69A6C1F8)
 I (..\tinyUSB\src\class\cdc\cdc.h)(0x69A6C1F8)
-F (..\tinyUSB\usb_task.c)(0x69EA11C4)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/usb_task.o -MMD)
-I (..\tinyUSB\usb_task.h)(0x6A69E4C7)
+F (..\tinyUSB\usb_task.c)(0x6AC8E9C7)(-xc -std=gnu99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../app -I ../cli -I ../libraries/drivers/inc -I ../libraries/cmsis/cm4/core_support -I ../libraries/cmsis/cm4/device_support -I ../mesh -I ../middlewares/usbd_class/cdc -I ../middlewares/usbd_drivers/inc -I ../periph -I ../SSD1306 -I ../radiohal -I ../radioproc -I ../radiofunc -I ../../radiodriver/llcc68 -I ../../radiodriver/lr11xx -I ../../radiodriver/lr20xx -I ../../radiodriver/pan3029 -I ../../radiodriver/sx126x -I ../../radiodriver/sx128x -I ../../radiodriver/sx127x -I ../tinyUSB/hw -I ../tinyUSB -I ../tinyUSB/src/class/cdc -I ../tinyUSB/src/common -I ../tinyUSB/src/device -I ../tinyUSB/src -I ../tinyUSB/src/portable/st/stm32_fsdev-IC:/Users/Admin/AppData/Local/Arm/Packs/ArteryTek/AT32F413_DFP/2.1.3/Device/Include-IC:/Keil_v535/ARM/CMSIS/Include-D__UVISION_VERSION="543" -DAT32F413CBT7 -DAT32F413CBT7 -DUSE_STDPERIPH_DRIVER -DCFG_TUD_ENABLED="1"-o ./objects/usb_task.o -MMD)
+I (..\tinyUSB\usb_task.h)(0x6AC8E436)
 I (..\app\bsp.h)(0x6A69E4C7)
 I (..\periph\wk_system.h)(0x68F0AC0A)
 I (..\libraries\cmsis\cm4\device_support\at32f413.h)(0x68B19280)
@@ -6655,7 +6655,7 @@ I (..\radioproc\pan_proc.h)(0x6A197F1F)
 I (..\mesh\meshtastic.h)(0x68F8DEA2)
 I (..\app\test_packet.h)(0x6A26CC40)
 I (..\app\keypad.h)(0x6A2A3B5E)
-I (..\app\ring_buffer.h)(0x6A6A002D)
+I (..\app\ring_buffer.h)(0x6AC8DC16)
 I (..\tinyUSB\src\tusb.h)(0x69A6C1F8)
 I (..\tinyUSB\src\common\tusb_common.h)(0x69A6C1F8)
 I (..\tinyUSB\src\tusb_option.h)(0x69A6C1F8)

@@ -125,6 +125,7 @@ void wk_usb_app_task(void)
 	{
 		//send_zero_packet = 1;
 		memcpy((void*)rxBuffer,(void*)usbd_app_buffer_fs1,length);
+		//change to fill ring buffer here
 		rxCount = length;
 	}
 	

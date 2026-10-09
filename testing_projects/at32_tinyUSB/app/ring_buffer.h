@@ -4,10 +4,8 @@
 
 #include <stdint.h>
 
-#define CDC_RX_SIZE 512
+#define CDC_RX_SIZE 1024
 #define CDC_TX_SIZE 1024
-//#define UART1_RX_SIZE 256
-//#define UART2_RX_SIZE 512
 
 typedef struct
 {

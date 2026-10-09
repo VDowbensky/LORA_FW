@@ -5,3 +5,4 @@
 *.map
 *.Admin
 *.dep
+/testing_projects/at32_tinyUSB/MDK_V5/objects

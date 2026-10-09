@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\objects\test_at32.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\objects\test_at32.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Fri Sep 11 10:55:27 2026
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Fri Oct  9 16:36:41 2026
 <BR><P>
 <H3>Maximum Stack Usage =        560 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -4702,7 +4702,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lr20xx_radio_common_set_pkt_type
 </UL>
 
-<P><STRONG><a name="[89]"></a>main</STRONG> (Thumb, 588 bytes, Stack size 8 bytes, main.o(.text.main))
+<P><STRONG><a name="[89]"></a>main</STRONG> (Thumb, 600 bytes, Stack size 8 bytes, main.o(.text.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 552<LI>Call Chain = main &rArr; radio_rxscan &rArr; radio_init &rArr; LR202x_init &rArr; LR202x_set_mod_params &rArr; lr20xx_radio_lora_set_modulation_params &rArr; lr20xx_workarounds_dcdc_configure &rArr; lr20xx_workaround_dcdc_set_frequency &rArr; lr20xx_regmem_write_regmem32 &rArr; lr20xx_hal_write &rArr; lr20xx_spi_transfer &rArr; spi1_transfer
 </UL>
 <BR>[Calls]<UL><LI><a href="#[2d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wk_wdt_init
@@ -4731,6 +4731,7 @@ Global Symbols
 <LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Keypad_Init
 <LI><a href="#[2da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wk_usb_app_init
 <LI><a href="#[2db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readconfig
+<LI><a href="#[233]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wk_usb_app_task
 <LI><a href="#[2dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_power_on
 <LI><a href="#[1c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RETARGET_Init
 <LI><a href="#[25a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_proc
@@ -4936,13 +4937,13 @@ Global Symbols
 <P><STRONG><a name="[24f]"></a>radio_get_chip_version</STRONG> (Thumb, 160 bytes, Stack size 32 bytes, radio_func.o(.text.radio_get_chip_version))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = radio_get_chip_version &rArr; lr11xx_system_get_version &rArr; lr11xx_hal_read &rArr; lr11xx_hal_wait_on_busy
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
-<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lr11xx_system_get_version
+<BR>[Calls]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lr11xx_system_get_version
 <LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lr20xx_system_get_version
 <LI><a href="#[188]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx128x_read_register
 <LI><a href="#[2f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_6
 <LI><a href="#[2f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_5
 <LI><a href="#[2f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_7
+<LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_getchip
 </UL>
@@ -4950,15 +4951,15 @@ Global Symbols
 <P><STRONG><a name="[251]"></a>radio_get_status</STRONG> (Thumb, 160 bytes, Stack size 32 bytes, radio_func.o(.text.radio_get_status))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = radio_get_status &rArr; lr11xx_system_get_status &rArr; lr11xx_hal_direct_read &rArr; lr11xx_hal_wait_on_busy
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
-<LI><a href="#[2f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_1
-<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lr11xx_system_get_status
+<BR>[Calls]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lr11xx_system_get_status
 <LI><a href="#[2f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx128x_get_status
 <LI><a href="#[2c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lr20xx_system_get_status
 <LI><a href="#[2f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx126x_get_status
 <LI><a href="#[2f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_6
 <LI><a href="#[2f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_5
 <LI><a href="#[2f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_7
+<LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
+<LI><a href="#[2f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_1
 </UL>
 <BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_getstatus
 </UL>
@@ -4966,9 +4967,7 @@ Global Symbols
 <P><STRONG><a name="[2ea]"></a>radio_getpacket</STRONG> (Thumb, 192 bytes, Stack size 24 bytes, radio_func.o(.text.radio_getpacket))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = radio_getpacket &rArr; lr20xx_radio_lora_get_packet_status &rArr; lr20xx_hal_read &rArr; lr20xx_hal_wait_on_busy
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
-<LI><a href="#[2f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_1
-<LI><a href="#[2a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lr11xx_regmem_read_buffer8
+<BR>[Calls]<UL><LI><a href="#[2a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lr11xx_regmem_read_buffer8
 <LI><a href="#[29b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lr11xx_radio_get_rx_buffer_status
 <LI><a href="#[2fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx126x_read_buffer
 <LI><a href="#[2fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx126x_get_rx_buffer_status
@@ -4982,6 +4981,8 @@ Global Symbols
 <LI><a href="#[2f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_6
 <LI><a href="#[2f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_5
 <LI><a href="#[2f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_7
+<LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
+<LI><a href="#[2f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_1
 <LI><a href="#[240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_rx_packet
@@ -4992,8 +4993,6 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
 <LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
-<LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
-<LI><a href="#[2f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_1
 <LI><a href="#[297]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lr11xx_radio_get_lora_pkt_status
 <LI><a href="#[2ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx126x_get_lora_pkt_status
 <LI><a href="#[2fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx128x_get_lora_pkt_status
@@ -5006,6 +5005,8 @@ Global Symbols
 <LI><a href="#[2f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_6
 <LI><a href="#[2f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_5
 <LI><a href="#[2f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_7
+<LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
+<LI><a href="#[2f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_1
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_rx_packet
 </UL>
@@ -5013,9 +5014,7 @@ Global Symbols
 <P><STRONG><a name="[24e]"></a>radio_getrssi</STRONG> (Thumb, 184 bytes, Stack size 24 bytes, radio_func.o(.text.radio_getrssi))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = radio_getrssi &rArr; SX127x_get_rssi_inst &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
-<LI><a href="#[2f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_1
-<LI><a href="#[29a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lr11xx_radio_get_rssi_inst
+<BR>[Calls]<UL><LI><a href="#[29a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lr11xx_radio_get_rssi_inst
 <LI><a href="#[301]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx126x_get_rssi_inst
 <LI><a href="#[300]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx128x_get_rssi_inst
 <LI><a href="#[2b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lr20xx_radio_common_get_rssi_inst
@@ -5025,6 +5024,8 @@ Global Symbols
 <LI><a href="#[2f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_6
 <LI><a href="#[2f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_5
 <LI><a href="#[2f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_7
+<LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
+<LI><a href="#[2f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_1
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_proc
 <LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_getRSSI
@@ -5033,15 +5034,15 @@ Global Symbols
 <P><STRONG><a name="[250]"></a>radio_getstats</STRONG> (Thumb, 140 bytes, Stack size 24 bytes, radio_func.o(.text.radio_getstats))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = radio_getstats &rArr; lr11xx_radio_get_lora_stats &rArr; lr11xx_hal_read &rArr; lr11xx_hal_wait_on_busy
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
-<LI><a href="#[2f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_1
-<LI><a href="#[298]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lr11xx_radio_get_lora_stats
+<BR>[Calls]<UL><LI><a href="#[298]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lr11xx_radio_get_lora_stats
 <LI><a href="#[303]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx126x_get_lora_stats
 <LI><a href="#[2c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lr20xx_radio_lora_get_rx_statistics
 <LI><a href="#[302]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx127x_get_rxpkt_cnt
 <LI><a href="#[2f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_6
 <LI><a href="#[2f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_5
 <LI><a href="#[2f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_7
+<LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
+<LI><a href="#[2f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_1
 </UL>
 <BR>[Called By]<UL><LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_getstats
 </UL>
@@ -5049,12 +5050,12 @@ Global Symbols
 <P><STRONG><a name="[252]"></a>radio_getxotrim</STRONG> (Thumb, 88 bytes, Stack size 24 bytes, radio_func.o(.text.radio_getxotrim))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = radio_getxotrim &rArr; sx126x_read_register &rArr; sx126x_hal_read &rArr; OUTLINED_FUNCTION_1 &rArr; sx126x_spi_transfer &rArr; spi1_transfer
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
-<LI><a href="#[2f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_1
-<LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx126x_read_register
+<BR>[Calls]<UL><LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx126x_read_register
 <LI><a href="#[2f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_6
 <LI><a href="#[2f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_5
 <LI><a href="#[2f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_7
+<LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
+<LI><a href="#[2f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_1
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_getxotrim
 </UL>
@@ -5062,9 +5063,7 @@ Global Symbols
 <P><STRONG><a name="[25b]"></a>radio_init</STRONG> (Thumb, 100 bytes, Stack size 8 bytes, radio_func.o(.text.radio_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 496<LI>Call Chain = radio_init &rArr; LR202x_init &rArr; LR202x_set_mod_params &rArr; lr20xx_radio_lora_set_modulation_params &rArr; lr20xx_workarounds_dcdc_configure &rArr; lr20xx_workaround_dcdc_set_frequency &rArr; lr20xx_regmem_write_regmem32 &rArr; lr20xx_hal_write &rArr; lr20xx_spi_transfer &rArr; spi1_transfer
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
-<LI><a href="#[2f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_1
-<LI><a href="#[304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_rx
+<BR>[Calls]<UL><LI><a href="#[304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_rx
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LR112x_init
 <LI><a href="#[1d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126x_init
 <LI><a href="#[211]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX128x_init
@@ -5074,6 +5073,8 @@ Global Symbols
 <LI><a href="#[2f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_6
 <LI><a href="#[2f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_5
 <LI><a href="#[2f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_7
+<LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
+<LI><a href="#[2f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_1
 </UL>
 <BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_txsweep
@@ -5095,9 +5096,7 @@ Global Symbols
 <P><STRONG><a name="[d0]"></a>radio_irq_handler</STRONG> (Thumb, 84 bytes, Stack size 0 bytes, radio_func.o(.text.radio_irq_handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = radio_irq_handler &rArr; PAN_irq_handler &rArr; PAN_GetPktSnr &rArr; PAN_ReadPageRegs &rArr; OUTLINED_FUNCTION_6 &rArr; PAN_SetPage &rArr; PAN_WriteReg &rArr; spi1_transfer
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
-<LI><a href="#[2f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_1
-<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LR112X_irq_handler
+<BR>[Calls]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LR112X_irq_handler
 <LI><a href="#[1cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_irq_handler
 <LI><a href="#[1bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PAN_irq_handler
 <LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LR20xx_irq_handler
@@ -5106,6 +5105,8 @@ Global Symbols
 <LI><a href="#[2f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_6
 <LI><a href="#[2f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_5
 <LI><a href="#[2f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_7
+<LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
+<LI><a href="#[2f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_1
 </UL>
 <BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXINT0_IRQHandler
 </UL>
@@ -5182,8 +5183,7 @@ Global Symbols
 <P><STRONG><a name="[305]"></a>radio_sendpacket</STRONG> (Thumb, 180 bytes, Stack size 32 bytes, radio_func.o(.text.radio_sendpacket))
 <BR><BR>[Stack]<UL><LI>Max Depth = 288<LI>Call Chain = radio_sendpacket &rArr; radio_setpktparams &rArr; SX128x_set_packet_params &rArr; SX128X_CalcPreamble &rArr; __hardfp_ldexp &rArr; __mathlib_dbl_underflow &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
-<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_setopmode
+<BR>[Calls]<UL><LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_setopmode
 <LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_setpktparams
 <LI><a href="#[2a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lr11xx_regmem_write_buffer8
 <LI><a href="#[308]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx126x_write_buffer
@@ -5195,6 +5195,7 @@ Global Symbols
 <LI><a href="#[2f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_6
 <LI><a href="#[2f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_5
 <LI><a href="#[2f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_7
+<LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_proc
 </UL>
@@ -5202,9 +5203,7 @@ Global Symbols
 <P><STRONG><a name="[261]"></a>radio_set_freq</STRONG> (Thumb, 152 bytes, Stack size 16 bytes, radio_func.o(.text.radio_set_freq))
 <BR><BR>[Stack]<UL><LI>Max Depth = 424<LI>Call Chain = radio_set_freq &rArr; LR202x_set_freq &rArr; lr20xx_radio_common_set_rx_path &rArr; lr20xx_workarounds_dcdc_configure &rArr; lr20xx_workaround_dcdc_set_frequency &rArr; lr20xx_regmem_write_regmem32 &rArr; lr20xx_hal_write &rArr; lr20xx_spi_transfer &rArr; spi1_transfer
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
-<LI><a href="#[2f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_1
-<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_setopmode
+<BR>[Calls]<UL><LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_setopmode
 <LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LR112X_set_freq
 <LI><a href="#[1e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx126x_set_rf_freq
 <LI><a href="#[217]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx128x_set_rf_freq
@@ -5215,6 +5214,8 @@ Global Symbols
 <LI><a href="#[2f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_6
 <LI><a href="#[2f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_5
 <LI><a href="#[2f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_7
+<LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
+<LI><a href="#[2f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_1
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_proc
 <LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_txsweep
@@ -5225,9 +5226,7 @@ Global Symbols
 <P><STRONG><a name="[22d]"></a>radio_set_power</STRONG> (Thumb, 196 bytes, Stack size 16 bytes, radio_func.o(.text.radio_set_power))
 <BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = radio_set_power &rArr; radio_setopmode &rArr; PAN_setopmode &rArr; PAN_StartTxContinuousWave &rArr; PAN_TurnonPA &rArr; PAN_TurnonTxAnt &rArr; OUTLINED_FUNCTION_0 &rArr; PAN_WriteGpioLevel &rArr; PAN_WritePageRegBits &rArr; PAN_SetPage &rArr; PAN_WriteReg &rArr; spi1_transfer
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
-<LI><a href="#[2f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_1
-<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_setopmode
+<BR>[Calls]<UL><LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_setopmode
 <LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lr11xx_radio_set_tx_params
 <LI><a href="#[1e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx126x_set_tx_params
 <LI><a href="#[219]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx128x_set_tx_params
@@ -5238,6 +5237,8 @@ Global Symbols
 <LI><a href="#[2f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_6
 <LI><a href="#[2f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_5
 <LI><a href="#[2f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_7
+<LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
+<LI><a href="#[2f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_1
 </UL>
 <BR>[Called By]<UL><LI><a href="#[22c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;add_power_settings
 <LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_setpower
@@ -5246,9 +5247,7 @@ Global Symbols
 <P><STRONG><a name="[237]"></a>radio_setmodparams</STRONG> (Thumb, 136 bytes, Stack size 24 bytes, radio_func.o(.text.radio_setmodparams))
 <BR><BR>[Stack]<UL><LI>Max Depth = 448<LI>Call Chain = radio_setmodparams &rArr; LR202x_set_mod_params &rArr; lr20xx_radio_lora_set_modulation_params &rArr; lr20xx_workarounds_dcdc_configure &rArr; lr20xx_workaround_dcdc_set_frequency &rArr; lr20xx_regmem_write_regmem32 &rArr; lr20xx_hal_write &rArr; lr20xx_spi_transfer &rArr; spi1_transfer
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
-<LI><a href="#[2f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_1
-<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_setopmode
+<BR>[Calls]<UL><LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_setopmode
 <LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LR112x_set_mod_params
 <LI><a href="#[1e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126x_set_mod_params
 <LI><a href="#[215]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX128x_set_mod_params
@@ -5260,6 +5259,8 @@ Global Symbols
 <LI><a href="#[2f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_6
 <LI><a href="#[2f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_5
 <LI><a href="#[2f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_7
+<LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
+<LI><a href="#[2f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_1
 </UL>
 <BR>[Called By]<UL><LI><a href="#[236]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bw_settings
 <LI><a href="#[266]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cr_settings
@@ -5271,9 +5272,7 @@ Global Symbols
 <P><STRONG><a name="[158]"></a>radio_setopmode</STRONG> (Thumb, 104 bytes, Stack size 8 bytes, radio_func.o(.text.radio_setopmode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = radio_setopmode &rArr; PAN_setopmode &rArr; PAN_StartTxContinuousWave &rArr; PAN_TurnonPA &rArr; PAN_TurnonTxAnt &rArr; OUTLINED_FUNCTION_0 &rArr; PAN_WriteGpioLevel &rArr; PAN_WritePageRegBits &rArr; PAN_SetPage &rArr; PAN_WriteReg &rArr; spi1_transfer
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
-<LI><a href="#[2f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_1
-<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LR112X_setopmode
+<BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LR112X_setopmode
 <LI><a href="#[1d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_setopmode
 <LI><a href="#[208]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX128X_setopmode
 <LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LR202x_setopmode
@@ -5282,6 +5281,8 @@ Global Symbols
 <LI><a href="#[2f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_6
 <LI><a href="#[2f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_5
 <LI><a href="#[2f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_7
+<LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
+<LI><a href="#[2f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_1
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_proc
 <LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_setopmode
@@ -7044,6 +7045,7 @@ Global Symbols
 <LI><a href="#[240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[21f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timing_irq
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[2d8]"></a>wk_usbfs_init</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, wk_usbfs.o(.text.wk_usbfs_init))

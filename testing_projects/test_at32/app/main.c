@@ -180,6 +180,11 @@ int main(void)
   while(1)
   {
     /* add user code begin 3 */
+		if(usb_flag)
+		{
+			usb_flag = false;
+			wk_usb_app_task();
+		}
 		radio_proc();
 		cli_proc();
 		if(SecFlag)
