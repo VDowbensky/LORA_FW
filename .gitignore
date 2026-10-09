@@ -1,3 +1,7 @@
 *.o
 *.Admin
 *.htm
+*.o
+*.map
+*.Admin
+*.dep

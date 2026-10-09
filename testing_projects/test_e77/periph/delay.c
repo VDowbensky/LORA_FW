@@ -16,13 +16,6 @@
  */
 void delay_init(void)
 {
-	//uint32_t reload;
-	//uint32_t tick_rate = 1000;
-	//uint32_t clk_freq = 48000000UL;
-	//if (clk_freq < 1000000) return;
-	//fac_us = clk_freq / 1000000;
-	//reload = clk_freq / tick_rate;
-	//fac_ms = 1000 / tick_rate;
 	SysTick_Config(RELOAD);
 }
 
