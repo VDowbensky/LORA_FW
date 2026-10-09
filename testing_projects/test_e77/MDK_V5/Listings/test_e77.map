@@ -1,4 +1,4 @@
-Component: Arm Compiler for Embedded 6.24 Tool: armlink [5f371500]
+Component: Arm Compiler for Embedded 6.23 Tool: armlink [5f102400]
 
 ==============================================================================
 
@@ -1967,6 +1967,7 @@ Section Cross References
     gui.o(.text.GUI_DrawLine) refers to ssd1306.o(.text.SSD1306_Set_Pixel) for SSD1306_Set_Pixel
     gui.o(.text.GUI_DrawLine) refers to ssd1306.o(.text.SSD1306_Display) for SSD1306_Display
     gui.o(.ARM.exidx.text.GUI_DrawLine) refers to gui.o(.text.GUI_DrawLine) for [Anonymous Symbol]
+    gui.o(.text.GUI_DrawRectangle) refers to gui.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
     gui.o(.text.GUI_DrawRectangle) refers to gui.o(.text.GUI_DrawLine) for GUI_DrawLine
     gui.o(.ARM.exidx.text.GUI_DrawRectangle) refers to gui.o(.text.GUI_DrawRectangle) for [Anonymous Symbol]
     gui.o(.text.GUI_FillRectangle) refers to gui.o(.text.GUI_Fill) for GUI_Fill
@@ -1986,22 +1987,23 @@ Section Cross References
     gui.o(.ARM.exidx.text.GUI_FillTriangel) refers to gui.o(.text.GUI_FillTriangel) for [Anonymous Symbol]
     gui.o(.text._draw_h_line) refers to ssd1306.o(.text.SSD1306_Set_Pixel) for SSD1306_Set_Pixel
     gui.o(.ARM.exidx.text._draw_h_line) refers to gui.o(.text._draw_h_line) for [Anonymous Symbol]
-    gui.o(.text.GUI_ShowChar) refers to gui.o(.text.OUTLINED_FUNCTION_1) for OUTLINED_FUNCTION_1
+    gui.o(.text.GUI_ShowChar) refers to gui.o(.text.OUTLINED_FUNCTION_2) for OUTLINED_FUNCTION_2
     gui.o(.text.GUI_ShowChar) refers to gui.o(.rodata.F6x8) for F6x8
     gui.o(.text.GUI_ShowChar) refers to gui.o(.rodata.F8X16) for F8X16
     gui.o(.ARM.exidx.text.GUI_ShowChar) refers to gui.o(.text.GUI_ShowChar) for [Anonymous Symbol]
     gui.o(.text.GUI_ShowString) refers to gui.o(.text.GUI_ShowChar) for GUI_ShowChar
     gui.o(.text.GUI_ShowString) refers to ssd1306.o(.text.SSD1306_Display) for SSD1306_Display
     gui.o(.ARM.exidx.text.GUI_ShowString) refers to gui.o(.text.GUI_ShowString) for [Anonymous Symbol]
-    gui.o(.text.GUI_ShowNum) refers to gui.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
+    gui.o(.text.GUI_ShowNum) refers to gui.o(.text.OUTLINED_FUNCTION_1) for OUTLINED_FUNCTION_1
     gui.o(.ARM.exidx.text.GUI_ShowNum) refers to gui.o(.text.GUI_ShowNum) for [Anonymous Symbol]
     gui.o(.text.GUI_DrawBMP) refers to ssd1306.o(.text.SSD1306_Set_Pixel) for SSD1306_Set_Pixel
     gui.o(.text.GUI_DrawBMP) refers to ssd1306.o(.text.SSD1306_Display) for SSD1306_Display
     gui.o(.ARM.exidx.text.GUI_DrawBMP) refers to gui.o(.text.GUI_DrawBMP) for [Anonymous Symbol]
-    gui.o(.text.OUTLINED_FUNCTION_0) refers to gui.o(.text.GUI_ShowChar) for GUI_ShowChar
     gui.o(.ARM.exidx.text.OUTLINED_FUNCTION_0) refers to gui.o(.text.OUTLINED_FUNCTION_0) for [Anonymous Symbol]
-    gui.o(.text.OUTLINED_FUNCTION_1) refers to ssd1306.o(.text.SSD1306_Set_Pixel) for SSD1306_Set_Pixel
+    gui.o(.text.OUTLINED_FUNCTION_1) refers to gui.o(.text.GUI_ShowChar) for GUI_ShowChar
     gui.o(.ARM.exidx.text.OUTLINED_FUNCTION_1) refers to gui.o(.text.OUTLINED_FUNCTION_1) for [Anonymous Symbol]
+    gui.o(.text.OUTLINED_FUNCTION_2) refers to ssd1306.o(.text.SSD1306_Set_Pixel) for SSD1306_Set_Pixel
+    gui.o(.ARM.exidx.text.OUTLINED_FUNCTION_2) refers to gui.o(.text.OUTLINED_FUNCTION_2) for [Anonymous Symbol]
     ssd1306.o(.text.SSD1306_Display_On) refers to ssd1306_interface.o(.text.SSD1306_WriteCommand) for SSD1306_WriteCommand
     ssd1306.o(.ARM.exidx.text.SSD1306_Display_On) refers to ssd1306.o(.text.SSD1306_Display_On) for [Anonymous Symbol]
     ssd1306.o(.text.SSD1306_Display_Off) refers to ssd1306_interface.o(.text.SSD1306_WriteCommand) for SSD1306_WriteCommand
@@ -3206,9 +3208,9 @@ Removing Unused input sections from the image.
     Removing gui.o(.ARM.exidx.text.GUI_Fill), (8 bytes).
     Removing gui.o(.text.GUI_DrawLine), (170 bytes).
     Removing gui.o(.ARM.exidx.text.GUI_DrawLine), (8 bytes).
-    Removing gui.o(.text.GUI_DrawRectangle), (72 bytes).
+    Removing gui.o(.text.GUI_DrawRectangle), (68 bytes).
     Removing gui.o(.ARM.exidx.text.GUI_DrawRectangle), (8 bytes).
-    Removing gui.o(.text.GUI_FillRectangle), (14 bytes).
+    Removing gui.o(.text.GUI_FillRectangle), (12 bytes).
     Removing gui.o(.ARM.exidx.text.GUI_FillRectangle), (8 bytes).
     Removing gui.o(.text.GUI_DrawCircle), (78 bytes).
     Removing gui.o(.ARM.exidx.text.GUI_DrawCircle), (8 bytes).
@@ -3216,7 +3218,7 @@ Removing Unused input sections from the image.
     Removing gui.o(.ARM.exidx.text._draw_circle_8), (8 bytes).
     Removing gui.o(.text.GUI_FillCircle), (90 bytes).
     Removing gui.o(.ARM.exidx.text.GUI_FillCircle), (8 bytes).
-    Removing gui.o(.text.GUI_DrawTriangel), (64 bytes).
+    Removing gui.o(.text.GUI_DrawTriangel), (68 bytes).
     Removing gui.o(.ARM.exidx.text.GUI_DrawTriangel), (8 bytes).
     Removing gui.o(.text.GUI_FillTriangel), (342 bytes).
     Removing gui.o(.ARM.exidx.text.GUI_FillTriangel), (8 bytes).
@@ -3228,9 +3230,11 @@ Removing Unused input sections from the image.
     Removing gui.o(.ARM.exidx.text.GUI_ShowNum), (8 bytes).
     Removing gui.o(.text.GUI_DrawBMP), (136 bytes).
     Removing gui.o(.ARM.exidx.text.GUI_DrawBMP), (8 bytes).
-    Removing gui.o(.text.OUTLINED_FUNCTION_0), (12 bytes).
+    Removing gui.o(.text.OUTLINED_FUNCTION_0), (8 bytes).
     Removing gui.o(.ARM.exidx.text.OUTLINED_FUNCTION_0), (8 bytes).
+    Removing gui.o(.text.OUTLINED_FUNCTION_1), (12 bytes).
     Removing gui.o(.ARM.exidx.text.OUTLINED_FUNCTION_1), (8 bytes).
+    Removing gui.o(.ARM.exidx.text.OUTLINED_FUNCTION_2), (8 bytes).
     Removing ssd1306.o(.text), (0 bytes).
     Removing ssd1306.o(.text.SSD1306_Display_On), (28 bytes).
     Removing ssd1306.o(.ARM.exidx.text.SSD1306_Display_On), (8 bytes).
@@ -3336,7 +3340,7 @@ Removing Unused input sections from the image.
     Removing meshtastic.o(.ARM.exidx.text.print_meshtastic_packet), (8 bytes).
     Removing meshtastic.o(.ARM.exidx.text.OUTLINED_FUNCTION_0), (8 bytes).
 
-815 unused section(s) (total 21358 bytes) removed from the image.
+817 unused section(s) (total 21372 bytes) removed from the image.
 
 ==============================================================================
 
@@ -3617,26 +3621,26 @@ Image Symbol Table
     [Anonymous Symbol]                       0x080016f8   Section        0  sx126x_hal.o(.text.OUTLINED_FUNCTION_1)
     OUTLINED_FUNCTION_1                      0x08001703   Thumb Code    14  stm32wlxx_ll_rcc.o(.text.OUTLINED_FUNCTION_1)
     [Anonymous Symbol]                       0x08001702   Section        0  stm32wlxx_ll_rcc.o(.text.OUTLINED_FUNCTION_1)
-    OUTLINED_FUNCTION_1                      0x08001711   Thumb Code    12  gui.o(.text.OUTLINED_FUNCTION_1)
-    [Anonymous Symbol]                       0x08001710   Section        0  gui.o(.text.OUTLINED_FUNCTION_1)
-    OUTLINED_FUNCTION_10                     0x0800171d   Thumb Code     8  sx126x.o(.text.OUTLINED_FUNCTION_10)
-    [Anonymous Symbol]                       0x0800171c   Section        0  sx126x.o(.text.OUTLINED_FUNCTION_10)
-    OUTLINED_FUNCTION_11                     0x08001725   Thumb Code    12  sx126x.o(.text.OUTLINED_FUNCTION_11)
-    [Anonymous Symbol]                       0x08001724   Section        0  sx126x.o(.text.OUTLINED_FUNCTION_11)
-    OUTLINED_FUNCTION_12                     0x08001731   Thumb Code     6  sx126x.o(.text.OUTLINED_FUNCTION_12)
-    [Anonymous Symbol]                       0x08001730   Section        0  sx126x.o(.text.OUTLINED_FUNCTION_12)
-    OUTLINED_FUNCTION_14                     0x08001737   Thumb Code     6  sx126x.o(.text.OUTLINED_FUNCTION_14)
-    [Anonymous Symbol]                       0x08001736   Section        0  sx126x.o(.text.OUTLINED_FUNCTION_14)
-    OUTLINED_FUNCTION_2                      0x0800173d   Thumb Code    10  test_packet.o(.text.OUTLINED_FUNCTION_2)
-    [Anonymous Symbol]                       0x0800173c   Section        0  test_packet.o(.text.OUTLINED_FUNCTION_2)
-    OUTLINED_FUNCTION_2                      0x08001747   Thumb Code     8  menu.o(.text.OUTLINED_FUNCTION_2)
-    [Anonymous Symbol]                       0x08001746   Section        0  menu.o(.text.OUTLINED_FUNCTION_2)
-    OUTLINED_FUNCTION_2                      0x0800174f   Thumb Code    10  radio_func.o(.text.OUTLINED_FUNCTION_2)
-    [Anonymous Symbol]                       0x0800174e   Section        0  radio_func.o(.text.OUTLINED_FUNCTION_2)
-    OUTLINED_FUNCTION_2                      0x08001759   Thumb Code    18  sx126x.o(.text.OUTLINED_FUNCTION_2)
-    [Anonymous Symbol]                       0x08001758   Section        0  sx126x.o(.text.OUTLINED_FUNCTION_2)
-    OUTLINED_FUNCTION_2                      0x0800176b   Thumb Code    10  stm32wlxx_ll_rcc.o(.text.OUTLINED_FUNCTION_2)
-    [Anonymous Symbol]                       0x0800176a   Section        0  stm32wlxx_ll_rcc.o(.text.OUTLINED_FUNCTION_2)
+    OUTLINED_FUNCTION_10                     0x08001711   Thumb Code     8  sx126x.o(.text.OUTLINED_FUNCTION_10)
+    [Anonymous Symbol]                       0x08001710   Section        0  sx126x.o(.text.OUTLINED_FUNCTION_10)
+    OUTLINED_FUNCTION_11                     0x08001719   Thumb Code    12  sx126x.o(.text.OUTLINED_FUNCTION_11)
+    [Anonymous Symbol]                       0x08001718   Section        0  sx126x.o(.text.OUTLINED_FUNCTION_11)
+    OUTLINED_FUNCTION_12                     0x08001725   Thumb Code     6  sx126x.o(.text.OUTLINED_FUNCTION_12)
+    [Anonymous Symbol]                       0x08001724   Section        0  sx126x.o(.text.OUTLINED_FUNCTION_12)
+    OUTLINED_FUNCTION_14                     0x0800172b   Thumb Code     6  sx126x.o(.text.OUTLINED_FUNCTION_14)
+    [Anonymous Symbol]                       0x0800172a   Section        0  sx126x.o(.text.OUTLINED_FUNCTION_14)
+    OUTLINED_FUNCTION_2                      0x08001731   Thumb Code    10  test_packet.o(.text.OUTLINED_FUNCTION_2)
+    [Anonymous Symbol]                       0x08001730   Section        0  test_packet.o(.text.OUTLINED_FUNCTION_2)
+    OUTLINED_FUNCTION_2                      0x0800173b   Thumb Code     8  menu.o(.text.OUTLINED_FUNCTION_2)
+    [Anonymous Symbol]                       0x0800173a   Section        0  menu.o(.text.OUTLINED_FUNCTION_2)
+    OUTLINED_FUNCTION_2                      0x08001743   Thumb Code    10  radio_func.o(.text.OUTLINED_FUNCTION_2)
+    [Anonymous Symbol]                       0x08001742   Section        0  radio_func.o(.text.OUTLINED_FUNCTION_2)
+    OUTLINED_FUNCTION_2                      0x0800174d   Thumb Code    18  sx126x.o(.text.OUTLINED_FUNCTION_2)
+    [Anonymous Symbol]                       0x0800174c   Section        0  sx126x.o(.text.OUTLINED_FUNCTION_2)
+    OUTLINED_FUNCTION_2                      0x0800175f   Thumb Code    10  stm32wlxx_ll_rcc.o(.text.OUTLINED_FUNCTION_2)
+    [Anonymous Symbol]                       0x0800175e   Section        0  stm32wlxx_ll_rcc.o(.text.OUTLINED_FUNCTION_2)
+    OUTLINED_FUNCTION_2                      0x08001769   Thumb Code    12  gui.o(.text.OUTLINED_FUNCTION_2)
+    [Anonymous Symbol]                       0x08001768   Section        0  gui.o(.text.OUTLINED_FUNCTION_2)
     OUTLINED_FUNCTION_3                      0x08001775   Thumb Code    10  test_packet.o(.text.OUTLINED_FUNCTION_3)
     [Anonymous Symbol]                       0x08001774   Section        0  test_packet.o(.text.OUTLINED_FUNCTION_3)
     OUTLINED_FUNCTION_3                      0x0800177f   Thumb Code     8  menu.o(.text.OUTLINED_FUNCTION_3)
@@ -4959,59 +4963,59 @@ Memory Map of the image
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x08000000   0x00000138   Data   RO         1105    RESET               startup_stm32wle5xx.o
-    0x08000138   0x08000138   0x00000000   Code   RO         1558  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x08000138   0x08000138   0x00000004   Code   RO         1874    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x0800013c   0x0800013c   0x00000004   Code   RO         1877    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x08000140   0x08000140   0x00000000   Code   RO         1879    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x08000140   0x08000140   0x00000000   Code   RO         1881    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x08000140   0x08000140   0x00000008   Code   RO         1882    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x08000148   0x08000148   0x00000000   Code   RO         1884    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
-    0x08000148   0x08000148   0x00000000   Code   RO         1886    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
-    0x08000148   0x08000148   0x00000004   Code   RO         1875    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x08000138   0x08000138   0x00000000   Code   RO         1560  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x08000138   0x08000138   0x00000004   Code   RO         1876    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x0800013c   0x0800013c   0x00000004   Code   RO         1879    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x08000140   0x08000140   0x00000000   Code   RO         1881    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x08000140   0x08000140   0x00000000   Code   RO         1883    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x08000140   0x08000140   0x00000008   Code   RO         1884    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x08000148   0x08000148   0x00000000   Code   RO         1886    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x08000148   0x08000148   0x00000000   Code   RO         1888    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x08000148   0x08000148   0x00000004   Code   RO         1877    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
     0x0800014c   0x0800014c   0x00000024   Code   RO         1106    .text               startup_stm32wle5xx.o
-    0x08000170   0x08000170   0x0000001e   Code   RO         1568    .text               mc_w.l(llshl.o)
-    0x0800018e   0x0800018e   0x00000040   Code   RO         1572    .text               mc_w.l(memmovea.o)
-    0x080001ce   0x080001ce   0x00000024   Code   RO         1574    .text               mc_w.l(memseta.o)
-    0x080001f2   0x080001f2   0x00000014   Code   RO         1576    .text               mc_w.l(strchr.o)
-    0x08000206   0x08000206   0x0000000e   Code   RO         1578    .text               mc_w.l(strlen.o)
-    0x08000214   0x08000214   0x0000001c   Code   RO         1580    .text               mc_w.l(strspn.o)
-    0x08000230   0x08000230   0x00000022   Code   RO         1582    .text               mc_w.l(strcspn.o)
-    0x08000252   0x08000252   0x0000002a   Code   RO         1588    .text               mc_w.l(strcasecmp.o)
-    0x0800027c   0x0800027c   0x00000070   Code   RO         1858    .text               mc_w.l(strtol.o)
-    0x080002ec   0x080002ec   0x00000072   Code   RO         1860    .text               mc_w.l(strtoul.o)
-    0x0800035e   0x0800035e   0x000000b0   Code   RO         1862    .text               mf_w.l(fadd.o)
-    0x0800040e   0x0800040e   0x0000001c   Code   RO         1864    .text               mf_w.l(fcmple.o)
-    0x0800042a   0x0800042a   0x0000001c   Code   RO         1866    .text               mf_w.l(fcmplt.o)
-    0x08000446   0x08000446   0x0000001c   Code   RO         1868    .text               mf_w.l(fcmpgt.o)
-    0x08000462   0x08000462   0x00000012   Code   RO         1870    .text               mf_w.l(fflti.o)
-    0x08000474   0x08000474   0x00000026   Code   RO         1872    .text               mf_w.l(f2d.o)
-    0x0800049a   0x0800049a   0x0000002c   Code   RO         1897    .text               mc_w.l(uidiv.o)
-    0x080004c6   0x080004c6   0x00000062   Code   RO         1899    .text               mc_w.l(uldiv.o)
-    0x08000528   0x08000528   0x00000008   Code   RO         1901    .text               mc_w.l(ctype_o.o)
-    0x08000530   0x08000530   0x00000012   Code   RO         1923    .text               mc_w.l(isspace_o.o)
-    0x08000542   0x08000542   0x0000000c   Code   RO         1929    .text               mc_w.l(tolower.o)
-    0x0800054e   0x0800054e   0x0000009e   Code   RO         1931    .text               mc_w.l(_strtoul.o)
-    0x080005ec   0x080005ec   0x00000008   Code   RO         1933    .text               mc_w.l(strtof.o)
-    0x080005f4   0x080005f4   0x00000000   Code   RO         1935    .text               mc_w.l(iusefp.o)
-    0x080005f4   0x080005f4   0x0000006e   Code   RO         1936    .text               mf_w.l(fepilogue.o)
-    0x08000662   0x08000662   0x0000014e   Code   RO         1938    .text               mf_w.l(dadd.o)
-    0x080007b0   0x080007b0   0x000000e4   Code   RO         1940    .text               mf_w.l(dmul.o)
-    0x08000894   0x08000894   0x000000de   Code   RO         1942    .text               mf_w.l(ddiv.o)
-    0x08000972   0x08000972   0x00000030   Code   RO         1944    .text               mf_w.l(dfixul.o)
+    0x08000170   0x08000170   0x0000001e   Code   RO         1570    .text               mc_w.l(llshl.o)
+    0x0800018e   0x0800018e   0x00000040   Code   RO         1574    .text               mc_w.l(memmovea.o)
+    0x080001ce   0x080001ce   0x00000024   Code   RO         1576    .text               mc_w.l(memseta.o)
+    0x080001f2   0x080001f2   0x00000014   Code   RO         1578    .text               mc_w.l(strchr.o)
+    0x08000206   0x08000206   0x0000000e   Code   RO         1580    .text               mc_w.l(strlen.o)
+    0x08000214   0x08000214   0x0000001c   Code   RO         1582    .text               mc_w.l(strspn.o)
+    0x08000230   0x08000230   0x00000022   Code   RO         1584    .text               mc_w.l(strcspn.o)
+    0x08000252   0x08000252   0x0000002a   Code   RO         1590    .text               mc_w.l(strcasecmp.o)
+    0x0800027c   0x0800027c   0x00000070   Code   RO         1860    .text               mc_w.l(strtol.o)
+    0x080002ec   0x080002ec   0x00000072   Code   RO         1862    .text               mc_w.l(strtoul.o)
+    0x0800035e   0x0800035e   0x000000b0   Code   RO         1864    .text               mf_w.l(fadd.o)
+    0x0800040e   0x0800040e   0x0000001c   Code   RO         1866    .text               mf_w.l(fcmple.o)
+    0x0800042a   0x0800042a   0x0000001c   Code   RO         1868    .text               mf_w.l(fcmplt.o)
+    0x08000446   0x08000446   0x0000001c   Code   RO         1870    .text               mf_w.l(fcmpgt.o)
+    0x08000462   0x08000462   0x00000012   Code   RO         1872    .text               mf_w.l(fflti.o)
+    0x08000474   0x08000474   0x00000026   Code   RO         1874    .text               mf_w.l(f2d.o)
+    0x0800049a   0x0800049a   0x0000002c   Code   RO         1899    .text               mc_w.l(uidiv.o)
+    0x080004c6   0x080004c6   0x00000062   Code   RO         1901    .text               mc_w.l(uldiv.o)
+    0x08000528   0x08000528   0x00000008   Code   RO         1903    .text               mc_w.l(ctype_o.o)
+    0x08000530   0x08000530   0x00000012   Code   RO         1925    .text               mc_w.l(isspace_o.o)
+    0x08000542   0x08000542   0x0000000c   Code   RO         1931    .text               mc_w.l(tolower.o)
+    0x0800054e   0x0800054e   0x0000009e   Code   RO         1933    .text               mc_w.l(_strtoul.o)
+    0x080005ec   0x080005ec   0x00000008   Code   RO         1935    .text               mc_w.l(strtof.o)
+    0x080005f4   0x080005f4   0x00000000   Code   RO         1937    .text               mc_w.l(iusefp.o)
+    0x080005f4   0x080005f4   0x0000006e   Code   RO         1938    .text               mf_w.l(fepilogue.o)
+    0x08000662   0x08000662   0x0000014e   Code   RO         1940    .text               mf_w.l(dadd.o)
+    0x080007b0   0x080007b0   0x000000e4   Code   RO         1942    .text               mf_w.l(dmul.o)
+    0x08000894   0x08000894   0x000000de   Code   RO         1944    .text               mf_w.l(ddiv.o)
+    0x08000972   0x08000972   0x00000030   Code   RO         1946    .text               mf_w.l(dfixul.o)
     0x080009a2   0x080009a2   0x00000002   PAD
-    0x080009a4   0x080009a4   0x00000030   Code   RO         1946    .text               mf_w.l(cdrcmple.o)
-    0x080009d4   0x080009d4   0x00000030   Code   RO         1948    .text               mc_w.l(init.o)
-    0x08000a04   0x08000a04   0x00000020   Code   RO         1950    .text               mc_w.l(llushr.o)
-    0x08000a24   0x08000a24   0x00000024   Code   RO         1952    .text               mc_w.l(llsshr.o)
-    0x08000a48   0x08000a48   0x0000001c   Code   RO         1954    .text               mc_w.l(_chval.o)
-    0x08000a64   0x08000a64   0x000000a8   Code   RO         1956    .text               mc_w.l(strtod.o)
-    0x08000b0c   0x08000b0c   0x000000ba   Code   RO         1958    .text               mf_w.l(depilogue.o)
+    0x080009a4   0x080009a4   0x00000030   Code   RO         1948    .text               mf_w.l(cdrcmple.o)
+    0x080009d4   0x080009d4   0x00000030   Code   RO         1950    .text               mc_w.l(init.o)
+    0x08000a04   0x08000a04   0x00000020   Code   RO         1952    .text               mc_w.l(llushr.o)
+    0x08000a24   0x08000a24   0x00000024   Code   RO         1954    .text               mc_w.l(llsshr.o)
+    0x08000a48   0x08000a48   0x0000001c   Code   RO         1956    .text               mc_w.l(_chval.o)
+    0x08000a64   0x08000a64   0x000000a8   Code   RO         1958    .text               mc_w.l(strtod.o)
+    0x08000b0c   0x08000b0c   0x000000ba   Code   RO         1960    .text               mf_w.l(depilogue.o)
     0x08000bc6   0x08000bc6   0x00000002   PAD
-    0x08000bc8   0x08000bc8   0x00000360   Code   RO         1962    .text               mc_w.l(scanf_fp.o)
-    0x08000f28   0x08000f28   0x00000040   Code   RO         1966    .text               mc_w.l(_sgetc.o)
-    0x08000f68   0x08000f68   0x00000018   Code   RO         1971    .text               mf_w.l(dfltul.o)
-    0x08000f80   0x08000f80   0x00000038   Code   RO         1973    .text               mf_w.l(d2f.o)
-    0x08000fb8   0x08000fb8   0x00000056   Code   RO         1983    .text               mc_w.l(__dczerorl2.o)
+    0x08000bc8   0x08000bc8   0x00000360   Code   RO         1964    .text               mc_w.l(scanf_fp.o)
+    0x08000f28   0x08000f28   0x00000040   Code   RO         1968    .text               mc_w.l(_sgetc.o)
+    0x08000f68   0x08000f68   0x00000018   Code   RO         1973    .text               mf_w.l(dfltul.o)
+    0x08000f80   0x08000f80   0x00000038   Code   RO         1975    .text               mf_w.l(d2f.o)
+    0x08000fb8   0x08000fb8   0x00000056   Code   RO         1985    .text               mc_w.l(__dczerorl2.o)
     0x0800100e   0x0800100e   0x00000002   PAD
     0x08001010   0x08001010   0x00000014   Code   RO            4    .text.ADC_IRQHandler  adc.o
     0x08001024   0x08001024   0x00000002   Code   RO          365    .text.AES_IRQHandler  stm32wlxx_it.o
@@ -5038,10 +5042,10 @@ Memory Map of the image
     0x08001508   0x08001508   0x000000e8   Code   RO         1287    .text.LL_USART_Init  stm32wlxx_ll_usart.o
     0x080015f0   0x080015f0   0x00000002   Code   RO          343    .text.MemManage_Handler  stm32wlxx_it.o
     0x080015f2   0x080015f2   0x00000002   PAD
-    0x080015f4   0x080015f4   0x00000018   Code   RO         1434    .text.Menu_EnterCurrentItem  micromenu.o
-    0x0800160c   0x0800160c   0x00000008   Code   RO         1428    .text.Menu_GetCurrentMenu  micromenu.o
-    0x08001614   0x08001614   0x00000030   Code   RO         1430    .text.Menu_Navigate  micromenu.o
-    0x08001644   0x08001644   0x00000014   Code   RO         1432    .text.Menu_SetGenericWriteCallback  micromenu.o
+    0x080015f4   0x080015f4   0x00000018   Code   RO         1436    .text.Menu_EnterCurrentItem  micromenu.o
+    0x0800160c   0x0800160c   0x00000008   Code   RO         1430    .text.Menu_GetCurrentMenu  micromenu.o
+    0x08001614   0x08001614   0x00000030   Code   RO         1432    .text.Menu_Navigate  micromenu.o
+    0x08001644   0x08001644   0x00000014   Code   RO         1434    .text.Menu_SetGenericWriteCallback  micromenu.o
     0x08001658   0x08001658   0x00000002   Code   RO          339    .text.NMI_Handler   stm32wlxx_it.o
     0x0800165a   0x0800165a   0x00000006   Code   RO          260    .text.OUTLINED_FUNCTION_0  app_cli.o
     0x08001660   0x08001660   0x0000000a   Code   RO          381    .text.OUTLINED_FUNCTION_0  test_packet.o
@@ -5051,7 +5055,7 @@ Memory Map of the image
     0x08001698   0x08001698   0x0000000e   Code   RO          954    .text.OUTLINED_FUNCTION_0  sx126x.o
     0x080016a6   0x080016a6   0x0000000c   Code   RO         1021    .text.OUTLINED_FUNCTION_0  sx126x_hal.o
     0x080016b2   0x080016b2   0x0000000a   Code   RO         1161    .text.OUTLINED_FUNCTION_0  stm32wlxx_ll_gpio.o
-    0x080016bc   0x080016bc   0x0000000a   Code   RO         1544    .text.OUTLINED_FUNCTION_0  meshtastic.o
+    0x080016bc   0x080016bc   0x0000000a   Code   RO         1546    .text.OUTLINED_FUNCTION_0  meshtastic.o
     0x080016c6   0x080016c6   0x0000000c   Code   RO          383    .text.OUTLINED_FUNCTION_1  test_packet.o
     0x080016d2   0x080016d2   0x0000000a   Code   RO          545    .text.OUTLINED_FUNCTION_1  menu.o
     0x080016dc   0x080016dc   0x0000000a   Code   RO          664    .text.OUTLINED_FUNCTION_1  radio_func.o
@@ -5059,16 +5063,16 @@ Memory Map of the image
     0x080016ee   0x080016ee   0x0000000a   Code   RO          956    .text.OUTLINED_FUNCTION_1  sx126x.o
     0x080016f8   0x080016f8   0x0000000a   Code   RO         1023    .text.OUTLINED_FUNCTION_1  sx126x_hal.o
     0x08001702   0x08001702   0x0000000e   Code   RO         1203    .text.OUTLINED_FUNCTION_1  stm32wlxx_ll_rcc.o
-    0x08001710   0x08001710   0x0000000c   Code   RO         1377    .text.OUTLINED_FUNCTION_1  gui.o
-    0x0800171c   0x0800171c   0x00000008   Code   RO          974    .text.OUTLINED_FUNCTION_10  sx126x.o
-    0x08001724   0x08001724   0x0000000c   Code   RO          976    .text.OUTLINED_FUNCTION_11  sx126x.o
-    0x08001730   0x08001730   0x00000006   Code   RO          978    .text.OUTLINED_FUNCTION_12  sx126x.o
-    0x08001736   0x08001736   0x00000006   Code   RO          982    .text.OUTLINED_FUNCTION_14  sx126x.o
-    0x0800173c   0x0800173c   0x0000000a   Code   RO          385    .text.OUTLINED_FUNCTION_2  test_packet.o
-    0x08001746   0x08001746   0x00000008   Code   RO          547    .text.OUTLINED_FUNCTION_2  menu.o
-    0x0800174e   0x0800174e   0x0000000a   Code   RO          666    .text.OUTLINED_FUNCTION_2  radio_func.o
-    0x08001758   0x08001758   0x00000012   Code   RO          958    .text.OUTLINED_FUNCTION_2  sx126x.o
-    0x0800176a   0x0800176a   0x0000000a   Code   RO         1205    .text.OUTLINED_FUNCTION_2  stm32wlxx_ll_rcc.o
+    0x08001710   0x08001710   0x00000008   Code   RO          974    .text.OUTLINED_FUNCTION_10  sx126x.o
+    0x08001718   0x08001718   0x0000000c   Code   RO          976    .text.OUTLINED_FUNCTION_11  sx126x.o
+    0x08001724   0x08001724   0x00000006   Code   RO          978    .text.OUTLINED_FUNCTION_12  sx126x.o
+    0x0800172a   0x0800172a   0x00000006   Code   RO          982    .text.OUTLINED_FUNCTION_14  sx126x.o
+    0x08001730   0x08001730   0x0000000a   Code   RO          385    .text.OUTLINED_FUNCTION_2  test_packet.o
+    0x0800173a   0x0800173a   0x00000008   Code   RO          547    .text.OUTLINED_FUNCTION_2  menu.o
+    0x08001742   0x08001742   0x0000000a   Code   RO          666    .text.OUTLINED_FUNCTION_2  radio_func.o
+    0x0800174c   0x0800174c   0x00000012   Code   RO          958    .text.OUTLINED_FUNCTION_2  sx126x.o
+    0x0800175e   0x0800175e   0x0000000a   Code   RO         1205    .text.OUTLINED_FUNCTION_2  stm32wlxx_ll_rcc.o
+    0x08001768   0x08001768   0x0000000c   Code   RO         1379    .text.OUTLINED_FUNCTION_2  gui.o
     0x08001774   0x08001774   0x0000000a   Code   RO          387    .text.OUTLINED_FUNCTION_3  test_packet.o
     0x0800177e   0x0800177e   0x00000008   Code   RO          549    .text.OUTLINED_FUNCTION_3  menu.o
     0x08001786   0x08001786   0x0000000e   Code   RO          960    .text.OUTLINED_FUNCTION_3  sx126x.o
@@ -5090,13 +5094,13 @@ Memory Map of the image
     0x08001868   0x08001868   0x000000fc   Code   RO         1183    .text.RCC_GetSystemClockFreq  stm32wlxx_ll_rcc.o
     0x08001964   0x08001964   0x0000003c   Code   RO          319    .text.RETARGET_ReadChar  retarget.o
     0x080019a0   0x080019a0   0x00000028   Code   RO          315    .text.RETARGET_SerialInit  retarget.o
-    0x080019c8   0x080019c8   0x00000024   Code   RO         1401    .text.SSD1306_Clear  ssd1306.o
-    0x080019ec   0x080019ec   0x00000030   Code   RO         1399    .text.SSD1306_Display  ssd1306.o
-    0x08001a1c   0x08001a1c   0x0000003c   Code   RO         1395    .text.SSD1306_Init  ssd1306.o
-    0x08001a58   0x08001a58   0x00000028   Code   RO         1397    .text.SSD1306_Set_Pixel  ssd1306.o
-    0x08001a80   0x08001a80   0x00000014   Code   RO         1414    .text.SSD1306_WriteCommand  ssd1306_interface.o
-    0x08001a94   0x08001a94   0x0000000a   Code   RO         1416    .text.SSD1306_WriteData  ssd1306_interface.o
-    0x08001a9e   0x08001a9e   0x00000004   Code   RO         1412    .text.SSD1306_interface_init  ssd1306_interface.o
+    0x080019c8   0x080019c8   0x00000024   Code   RO         1403    .text.SSD1306_Clear  ssd1306.o
+    0x080019ec   0x080019ec   0x00000030   Code   RO         1401    .text.SSD1306_Display  ssd1306.o
+    0x08001a1c   0x08001a1c   0x0000003c   Code   RO         1397    .text.SSD1306_Init  ssd1306.o
+    0x08001a58   0x08001a58   0x00000028   Code   RO         1399    .text.SSD1306_Set_Pixel  ssd1306.o
+    0x08001a80   0x08001a80   0x00000014   Code   RO         1416    .text.SSD1306_WriteCommand  ssd1306_interface.o
+    0x08001a94   0x08001a94   0x0000000a   Code   RO         1418    .text.SSD1306_WriteData  ssd1306_interface.o
+    0x08001a9e   0x08001a9e   0x00000004   Code   RO         1414    .text.SSD1306_interface_init  ssd1306_interface.o
     0x08001aa2   0x08001aa2   0x00000002   PAD
     0x08001aa4   0x08001aa4   0x00000078   Code   RO           63    .text.SUBGHZSPI_Init  subghz.o
     0x08001b1c   0x08001b1c   0x00000004   Code   RO          363    .text.SUBGHZ_Radio_IRQHandler  stm32wlxx_it.o
@@ -5177,7 +5181,7 @@ Memory Map of the image
     0x080031c4   0x080031c4   0x0000004c   Code   RO          218    .text.cli_writereg  app_cli.o
     0x08003210   0x08003210   0x00000006   Code   RO          423    .text.cls           menu.o
     0x08003216   0x08003216   0x00000002   PAD
-    0x08003218   0x08003218   0x0000003c   Code   RO         1540    .text.decode_meshtastic_packet  meshtastic.o
+    0x08003218   0x08003218   0x0000003c   Code   RO         1542    .text.decode_meshtastic_packet  meshtastic.o
     0x08003254   0x08003254   0x00000020   Code   RO           17    .text.delay_init    delay.o
     0x08003274   0x08003274   0x0000000a   Code   RO           21    .text.delay_ms      delay.o
     0x0800327e   0x0800327e   0x00000002   PAD
@@ -5256,7 +5260,7 @@ Memory Map of the image
     0x080045e8   0x080045e8   0x0000008c   Code   RO          692    .text.prepareTxPacket  radio_proc.o
     0x08004674   0x08004674   0x0000003c   Code   RO          377    .text.prepare_test_ack  test_packet.o
     0x080046b0   0x080046b0   0x00000050   Code   RO          375    .text.prepare_test_request  test_packet.o
-    0x08004700   0x08004700   0x000002fc   Code   RO         1542    .text.print_meshtastic_packet  meshtastic.o
+    0x08004700   0x08004700   0x000002fc   Code   RO         1544    .text.print_meshtastic_packet  meshtastic.o
     0x080049fc   0x080049fc   0x000000b0   Code   RO          256    .text.printerror    app_cli.o
     0x08004aac   0x08004aac   0x0000004c   Code   RO          696    .text.process_rx_packet  radio_proc.o
     0x08004af8   0x08004af8   0x000002c0   Code   RO          379    .text.process_test_packet  test_packet.o
@@ -5373,33 +5377,33 @@ Memory Map of the image
     0x08006030   0x08006030   0x000000d4   Code   RO          287    .text.timing_irq_process  bsp.o
     0x08006104   0x08006104   0x00000054   Code   RO          153    .text.validateInteger  command_interpreter.o
     0x08006158   0x08006158   0x00000024   Code   RO           33    .text.writeconfig   flash.o
-    0x0800617c   0x0800617c   0x00000020   Code   RO         1823    i.__0printf         mc_w.l(printfa.o)
-    0x0800619c   0x0800619c   0x00000028   Code   RO         1825    i.__0sprintf        mc_w.l(printfa.o)
-    0x080061c4   0x080061c4   0x00000008   Code   RO         1851    i.__aeabi_errno_addr  mc_w.l(errno.o)
-    0x080061cc   0x080061cc   0x0000000e   Code   RO         1977    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x080061da   0x080061da   0x00000002   Code   RO         1978    i.__scatterload_null  mc_w.l(handlers.o)
-    0x080061dc   0x080061dc   0x0000000e   Code   RO         1979    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x0800617c   0x0800617c   0x00000020   Code   RO         1825    i.__0printf         mc_w.l(printfa.o)
+    0x0800619c   0x0800619c   0x00000028   Code   RO         1827    i.__0sprintf        mc_w.l(printfa.o)
+    0x080061c4   0x080061c4   0x00000008   Code   RO         1853    i.__aeabi_errno_addr  mc_w.l(errno.o)
+    0x080061cc   0x080061cc   0x0000000e   Code   RO         1979    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x080061da   0x080061da   0x00000002   Code   RO         1980    i.__scatterload_null  mc_w.l(handlers.o)
+    0x080061dc   0x080061dc   0x0000000e   Code   RO         1981    i.__scatterload_zeroinit  mc_w.l(handlers.o)
     0x080061ea   0x080061ea   0x00000002   PAD
-    0x080061ec   0x080061ec   0x00000184   Code   RO         1830    i._fp_digits        mc_w.l(printfa.o)
-    0x08006370   0x08006370   0x0000000e   Code   RO         1964    i._is_digit         mc_w.l(scanf_fp.o)
+    0x080061ec   0x080061ec   0x00000184   Code   RO         1832    i._fp_digits        mc_w.l(printfa.o)
+    0x08006370   0x08006370   0x0000000e   Code   RO         1966    i._is_digit         mc_w.l(scanf_fp.o)
     0x0800637e   0x0800637e   0x00000002   PAD
-    0x08006380   0x08006380   0x000006dc   Code   RO         1831    i._printf_core      mc_w.l(printfa.o)
-    0x08006a5c   0x08006a5c   0x00000024   Code   RO         1832    i._printf_post_padding  mc_w.l(printfa.o)
-    0x08006a80   0x08006a80   0x0000002e   Code   RO         1833    i._printf_pre_padding  mc_w.l(printfa.o)
-    0x08006aae   0x08006aae   0x0000000a   Code   RO         1835    i._sputc            mc_w.l(printfa.o)
-    0x08006ab8   0x08006ab8   0x00000024   Code   RO         1561    i.puts              mc_w.l(puts.o)
-    0x08006adc   0x08006adc   0x00000014   Code   RO         1555    i.strtof            m_ws.l(strtof.o)
-    0x08006af0   0x08006af0   0x00000081   Data   RO         1902    .constdata          mc_w.l(ctype_o.o)
+    0x08006380   0x08006380   0x000006dc   Code   RO         1833    i._printf_core      mc_w.l(printfa.o)
+    0x08006a5c   0x08006a5c   0x00000024   Code   RO         1834    i._printf_post_padding  mc_w.l(printfa.o)
+    0x08006a80   0x08006a80   0x0000002e   Code   RO         1835    i._printf_pre_padding  mc_w.l(printfa.o)
+    0x08006aae   0x08006aae   0x0000000a   Code   RO         1837    i._sputc            mc_w.l(printfa.o)
+    0x08006ab8   0x08006ab8   0x00000024   Code   RO         1563    i.puts              mc_w.l(puts.o)
+    0x08006adc   0x08006adc   0x00000014   Code   RO         1557    i.strtof            m_ws.l(strtof.o)
+    0x08006af0   0x08006af0   0x00000081   Data   RO         1904    .constdata          mc_w.l(ctype_o.o)
     0x08006b71   0x08006b71   0x00000003   PAD
-    0x08006b74   0x08006b74   0x00000004   Data   RO         1903    .constdata          mc_w.l(ctype_o.o)
+    0x08006b74   0x08006b74   0x00000004   Data   RO         1905    .constdata          mc_w.l(ctype_o.o)
     0x08006b78   0x08006b78   0x00000014   Data   RO          586    .rodata..L__const.pkt_bw_set.bw_val  menu.o
     0x08006b8c   0x08006b8c   0x00000014   Data   RO          266    .rodata..Lswitch.table.cli_setmodparams  app_cli.o
     0x08006ba0   0x08006ba0   0x00000040   Data   RO         1093    .rodata.AHBPrescTable  system_stm32wlxx.o
     0x08006be0   0x08006be0   0x00000020   Data   RO         1094    .rodata.APBPrescTable  system_stm32wlxx.o
-    0x08006c00   0x08006c00   0x000002f8   Data   RO         1379    .rodata.F6x8        gui.o
-    0x08006ef8   0x08006ef8   0x000005f0   Data   RO         1380    .rodata.F8X16       gui.o
+    0x08006c00   0x08006c00   0x000002f8   Data   RO         1381    .rodata.F6x8        gui.o
+    0x08006ef8   0x08006ef8   0x000005f0   Data   RO         1382    .rodata.F8X16       gui.o
     0x080074e8   0x080074e8   0x00000040   Data   RO         1095    .rodata.MSIRangeTable  system_stm32wlxx.o
-    0x08007528   0x08007528   0x00000018   Data   RO         1436    .rodata.NULL_MENU   micromenu.o
+    0x08007528   0x08007528   0x00000018   Data   RO         1438    .rodata.NULL_MENU   micromenu.o
     0x08007540   0x08007540   0x0000002d   Data   RO          570    .rodata.m_exit      menu.o
     0x0800756d   0x0800756d   0x00000003   PAD
     0x08007570   0x08007570   0x0000002a   Data   RO          577    .rodata.m_exit_settings  menu.o
@@ -5478,17 +5482,17 @@ Memory Map of the image
     0x08007fef   0x08007fef   0x00000015   Data   RO          393    .rodata.str1.1      test_packet.o
     0x08008004   0x08008004   0x0000004d   Data   RO          587    .rodata.str1.1      menu.o
     0x08008051   0x08008051   0x0000001e   Data   RO          722    .rodata.str1.1      radio_proc.o
-    0x0800806f   0x0800806f   0x000000da   Data   RO         1546    .rodata.str1.1      meshtastic.o
+    0x0800806f   0x0800806f   0x000000da   Data   RO         1548    .rodata.str1.1      meshtastic.o
     0x08008149   0x08008149   0x00000003   PAD
-    0x0800814c   0x0800814c   0x00000040   Data   RO         1976    Region$$Table       anon$$obj.o
+    0x0800814c   0x0800814c   0x00000040   Data   RO         1978    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08008190, Size: 0x00000aa0, Max: 0x00008000, ABSOLUTE, COMPRESSED[0x00000180])
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   COMPRESSED   0x00000004   Data   RW         1567    .data               mc_w.l(stdout.o)
-    0x20000004   COMPRESSED   0x00000004   Data   RW         1437    .data.CurrentMenuItem  micromenu.o
+    0x20000000   COMPRESSED   0x00000004   Data   RW         1569    .data               mc_w.l(stdout.o)
+    0x20000004   COMPRESSED   0x00000004   Data   RW         1439    .data.CurrentMenuItem  micromenu.o
     0x20000008   COMPRESSED   0x000002b0   Data   RW          263    .data.commands      app_cli.o
     0x200002b8   COMPRESSED   0x00000004   Data   RW          717    .data.inter_packet_delay  radio_proc.o
     0x200002bc   COMPRESSED   0x00000004   PAD
@@ -5518,7 +5522,7 @@ Memory Map of the image
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20008000   0x08008310   0x00000004   Data   RW         1854    .data               mc_w.l(errno.o)
+    0x20008000   0x08008310   0x00000004   Data   RW         1856    .data               mc_w.l(errno.o)
     0x20008004   0x08008314   0x00000008   Data   RW          297    .data..L_MergedGlobals  bsp.o
     0x2000800c   0x0800831c   0x00000001   Data   RW          295    .data.Key           bsp.o
     0x2000800d   0x0800831d   0x00000003   PAD
@@ -5527,10 +5531,10 @@ Memory Map of the image
     0x20008015   0x08008325   0x00000003   PAD
     0x20008018        -       0x00000008   Zero   RW          126    .bss..L_MergedGlobals  encoder.o
     0x20008020        -       0x00000028   Zero   RW          724    .bss..L_MergedGlobals  radio_proc.o
-    0x20008048        -       0x00000004   Zero   RW         1438    .bss.MenuWriteFunc  micromenu.o
+    0x20008048        -       0x00000004   Zero   RW         1440    .bss.MenuWriteFunc  micromenu.o
     0x2000804c        -       0x00000001   Zero   RW          296    .bss.RxRestartFlag  bsp.o
     0x2000804d   0x08008325   0x00000003   PAD
-    0x20008050        -       0x00000400   Zero   RW         1403    .bss.SSD1306_buffer  ssd1306.o
+    0x20008050        -       0x00000400   Zero   RW         1405    .bss.SSD1306_buffer  ssd1306.o
     0x20008450        -       0x00000100   Zero   RW          265    .bss.ciBuffer       app_cli.o
     0x20008550        -       0x00000001   Zero   RW          671    .bss.header_error   radio_func.o
     0x20008551        -       0x00000001   Zero   RW          669    .bss.packet_received  radio_func.o
@@ -5540,7 +5544,7 @@ Memory Map of the image
     0x20008559        -       0x00000100   Zero   RW          680    .bss.radio_rxbuffer  radio_func.o
     0x20008659        -       0x00000200   Zero   RW          329    .bss.rxBuffer       retarget.o
     0x20008859        -       0x00000001   Zero   RW          675    .bss.rxlen          radio_func.o
-    0x2000885a        -       0x00000040   Zero   RW         1419    .bss.strbuffer      ssd1306_interface.o
+    0x2000885a        -       0x00000040   Zero   RW         1421    .bss.strbuffer      ssd1306_interface.o
     0x2000889a   0x08008325   0x00000002   PAD
     0x2000889c        -       0x00000104   Zero   RW          391    .bss.test_txpacket  test_packet.o
     0x200089a0        -       0x00000100   Zero   RW          721    .bss.txmessage      radio_proc.o
@@ -5554,6 +5558,46 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
+<<<<<<< HEAD
+        20          4          0          0          0       8442   adc.o
+      3878       1570       1045        688        276      15569   app_cli.o
+       612        112          0          9          5       8665   bsp.o
+      1146         90         99          0          0       8404   command_interpreter.o
+        86         12          0          0          0       4110   delay.o
+       232         12          0          0         10       5605   encoder.o
+       340         36          0          0          0       2438   flash.o
+       120         12          0          0          0       2675   gpio.o
+       294          8       2280          0          0      11868   gui.o
+       224         32          0          0          0       5564   i2c.o
+       208         76          0          0          0        604   main.o
+      4352        784       1632          1          1      15820   menu.o
+       834        276        218          0          0       2156   meshtastic.o
+       100         12         24          4          4       1638   micromenu.o
+      1002         56          0          0        686      10141   radio_func.o
+      1200        228         30          4        562       5395   radio_proc.o
+       192         28          0          0        528       3167   retarget.o
+       184         36          0          0       1024       2115   ssd1306.o
+        34          0          0          0         64       1227   ssd1306_interface.o
+        36          8        312          0       1024        828   startup_stm32wle5xx.o
+        34          0          0          0          0       1831   stm32wlxx_it.o
+       336          0          0          0          0       5470   stm32wlxx_ll_gpio.o
+       418         40          0          0          0      12203   stm32wlxx_ll_rcc.o
+       128          0          0          0          0       5266   stm32wlxx_ll_spi.o
+       120          4          0          0          0      12485   stm32wlxx_ll_tim.o
+       232         60          0          0          0       5115   stm32wlxx_ll_usart.o
+        12          4          0          0          0       9548   stm32wlxx_ll_utils.o
+       416         48          0          0          0       9349   subghz.o
+      1640          4          0          0          0      39317   sx126x.o
+       198          0          0          0          0       2430   sx126x_hal.o
+        68          8          0          0          0       2819   sx126x_interface.o
+       818         40          0          0          0       6848   sx126x_proc.o
+       166         28        160          4          0       2401   system_stm32wlxx.o
+       896        264         21          0        520       2267   test_packet.o
+       260         16          0          0          0       6847   uart.o
+
+    ----------------------------------------------------------------------
+     20880       3908       5964        716       4720     240627   Object Totals
+=======
         20          4          0          0          0       8445   adc.o
       3878       1570       1045        688        276      15570   app_cli.o
        612        112          0          9          5       8668   bsp.o
@@ -5592,6 +5636,7 @@ Image component sizes
 
     ----------------------------------------------------------------------
      20880       3908       5964        716       4720     240694   Object Totals
+>>>>>>> e515ebbf6f30beb19cd130321874fe0be6651607
          0          0         64          0          0          0   (incl. Generated)
         44          0         79          6         16          0   (incl. Padding)
 
@@ -5677,8 +5722,13 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
+<<<<<<< HEAD
+     27064       4060       6100        724       4720     242155   Grand Totals
+     27064       4060       6100        408       4720     242155   ELF Image Totals (compressed)
+=======
      27064       4060       6100        724       4720     242222   Grand Totals
      27064       4060       6100        408       4720     242222   ELF Image Totals (compressed)
+>>>>>>> e515ebbf6f30beb19cd130321874fe0be6651607
      27064       4060       6100        408          0          0   ROM Totals
 
 ==============================================================================
