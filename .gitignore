@@ -1,15 +1,9 @@
 *.o
 *.Admin
 *.htm
-*.o
 *.map
-*.Admin
-*.dep
 /testing_projects/at32_tinyUSB/MDK_V5/objects
 *.dep
-*.Admin
-*.Admin
 /testing_projects/test_e77/MDK_V5/Objects
 *.htm
-*.Admin
-*.Admin
+
