@@ -83,6 +83,12 @@
 #define SX126X_REG_FRAMELIM_H                 0x00f4
 #define SX126X_REG_FRAMELIM_L                 0x00f5
 
+/* The Rx Gain register is not part of the retention memory when waking-up from a warm-start mode. To include this register in the retention
+memory, or to continue using Rx Boosted gain when using the SetRxDutyCycle method, the following steps are mandatory:
+• Set register 0x029F to 0x01
+• Set register 0x02A0 to 0x08
+• Set register 0x02A1 to 0xAC */
+
 
 #define SX126X_REG_HoppingEnable               0x0385
 #define SX126X_REG_PacketLength                0x0386

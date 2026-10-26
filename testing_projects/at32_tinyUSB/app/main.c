@@ -311,7 +311,8 @@ int main(void)
 						master = false;
 						tx_request = false;
 					}
-				}					
+				}	
+				break;				
 			}
 			
 			default:
